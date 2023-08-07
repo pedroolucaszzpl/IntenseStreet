@@ -7,7 +7,10 @@
     --black: #000000;
     --white: #ffff;
 }
-
+@font-face {
+    font-family: "Gotham";
+    src: url(../Gotham-Font/GothamBook.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,13 +19,15 @@
 .container {
     max-width: 1140px;
 }
-
+.content{
+    display:flex;
+}
 .navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 50px 0 20px 0;
+    padding: 10px 0 20px 0;
     background-color: var(--black) !important;
 }
 
@@ -48,8 +53,8 @@
 }
 
 .nav-link {
+    font-family: 'Gotham', 'Helvetica Neue', Arial, Helvetica;
     font-size: 20px;
-    font-weight: 700;
     color: var(--white);
     padding-left: 10px;
     padding-right: 10px;
@@ -60,4 +65,21 @@
     background-color: #000000;
     font-size: 20px;
     color: var(--white);
+    font-family: 'Gotham', 'Helvetica Neue', Helvetica, Arial;
+}
+.lupa{
+    width: 30px;
+}
+.logo1{
+    width: 100px;
+}
+.carrinho{
+    width: 40px;
+    padding-left: 10px;
+}
+.ask{
+    width:500px;
+    height: 20px;
+    font-family: 'Gotham', 'Helvetica Neue', Helvetica, Arial;
+    font-size: 15px;
 }
