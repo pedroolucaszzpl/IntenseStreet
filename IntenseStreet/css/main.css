@@ -22,8 +22,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 50px 0 20px 0;
+    justify-content: space-around;
+    padding: 5px 0 5px 0;
     background-color: var(--black) !important;
 }
 
@@ -40,7 +40,7 @@
 }
 
 #logo1{
-    width: 70px;
+    width: 95px;
 }
 
 .navbar-items {
@@ -60,23 +60,26 @@
 
 .nav-link {
     font-size: 20px;
-    font-weight: 700;
     color: var(--white);
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
     align-items: center;
     justify-content: center;
+    font-family: "Gotham";
 }
 #departamentos{
     border: none;
     background-color: #000000;
     font-size: 20px;
     color: var(--white);
+    font-family: "Gotham";
+    padding-left: 20px;
 }
 
 #lupa{
     width: 30px;
+    padding-right: 20px;
 }
 
 #carrinho{
@@ -100,4 +103,11 @@
     width: 500px;
     height: 20px;
     font-size: 15px;
+    font-family: "Gotham";
+    padding-left: 5px;
+}
+.label1{
+    width: 0px;
+    height: 0px;
+    display: inline-flex;
 }
