@@ -4,7 +4,7 @@
     --InGreen: #00FF00;
     --Green: #04D004;
     --LightGreen: #99FFAB;
-    --black: #000000;
+    --black: #211B15;
     --white: #ffff;
 }
 
@@ -12,6 +12,11 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url();
 }
 
 .container {
@@ -70,7 +75,7 @@
 }
 #departamentos{
     border: none;
-    background-color: #000000;
+    background-color: var(--black);
     font-size: 20px;
     color: var(--white);
     font-family: "Gotham";
@@ -105,9 +110,4 @@
     font-size: 15px;
     font-family: "Gotham";
     padding-left: 5px;
-}
-.label1{
-    width: 0px;
-    height: 0px;
-    display: inline-flex;
 }
