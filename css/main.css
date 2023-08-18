@@ -38,6 +38,7 @@
 
 .navbar-logo {
     align-items: center;
+    width: 85px;
 }
 
 .content{
@@ -45,7 +46,7 @@
 }
 
 #logo1{
-    width: 95px;
+    width: 100%;
 }
 
 .navbar-items {
@@ -73,6 +74,9 @@
     justify-content: center;
     font-family: "Gotham";
 }
+.nav-link:hover{
+    color: #bababa;
+}
 #departamentos{
     border: none;
     background-color: var(--black);
@@ -81,7 +85,9 @@
     font-family: "Gotham";
     padding-left: 20px;
 }
-
+#departamentos:hover{
+    color: #bababa;
+}
 #lupa{
     width: 30px;
     padding-right: 20px;
@@ -95,6 +101,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 530px;
+    height: 20px;
 }
 
 .buy{
@@ -105,9 +113,21 @@
 }
 
 .ask{
-    width: 500px;
-    height: 20px;
+    width: 94%;
+    height: 100%;
     font-size: 15px;
     font-family: "Gotham";
     padding-left: 5px;
+}
+@media screen and (min-width: 370px) and (max-width:900px){
+    .navbar{
+        align-items: left;
+    }
+    .navbar-logo{
+        width: 65px;
+        align-items: left;
+    }
+    .search{
+        width: 300px;
+    }
 }
