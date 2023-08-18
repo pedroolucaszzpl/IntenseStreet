@@ -130,4 +130,10 @@
     .search{
         width: 300px;
     }
+    .content{
+        display:none;
+    }
+    #carrinho{
+        display: none;
+    }
 }
