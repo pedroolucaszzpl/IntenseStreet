@@ -1,0 +1,60 @@
+.barra {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+ }
+
+#linhas {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+ }
+ .line {
+    width: 680px;
+    height: 2px;
+    background: var(--black);
+    margin: 15px;
+ }
+
+ .tenis{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ 
+.pag{
+    font-size: 20px;
+    color: black;
+}
+.calçados {
+    width: 100%;
+    height: 35px;
+    background-color: black;
+ }
+
+#linha {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+ }
+ .lines {
+    width: 1500px;
+    height: 2px;
+    background: var(--white);
+    margin: 15px;
+ }
+ 
+.fonte{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+}
+section {
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(to bottom, #9400D3 0,#9400D3 100%);
+  }
+#imgtst {
+    width: 135px;
+    height: 135px;
+    margin: 15px;
+}
