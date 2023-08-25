@@ -1,9 +1,18 @@
+:root {
+  --InPurple: #9400D3;
+  --LightPurple: #8B53FF;
+  --InGreen: #00FF00;
+  --Green: #04D004;
+  --LightGreen: #99FFAB;
+  --black: #211B15;
+  --white: #ffff;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: black;
     margin: 0px 310px;
     padding: 0;
-
+    justify-content: center;
   }
   
   .container {
@@ -32,17 +41,20 @@ body {
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 10px;
   }
   
   button {
     padding: 10px;
     margin-top: 10px;
-    background-color: green;
+    background-color:var(--Green) ;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
+    width: 400px;
+    font-size: 16px;
+    margin: 10px;
   }
   
   button:hover {
@@ -54,6 +66,9 @@ body {
   }
 
   label {
+    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
     color: white;
+    text-align: left;
+    text-decoration: var(--InPurple);
   }
   

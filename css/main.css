@@ -15,8 +15,8 @@
 }
 
 @font-face {
-    font-family: "Gotham";
-    src: url();
+    font-family: "Bauhaus";
+    src: url(/Bauhaus\ Font\ Family/);
 }
 
 .container {
@@ -38,7 +38,8 @@
 
 .navbar-logo {
     align-items: center;
-    width: 85px;
+    
+    width: 100px;
 }
 
 .content {
@@ -124,6 +125,7 @@
     padding-left: 5px;
 }
 
+
 /*slides*/
 .slider {
     margin: 0 auto;
@@ -142,13 +144,6 @@
     display: none
 }
 
-.slide {
-    position: relative;
-}
-
-.slide img {
-    width: 1280px;
-}
 
 .manual-navigation {
     position: absolute;
@@ -190,36 +185,144 @@
     margin-left: -300%;
 }
 
-.navigation-auto div{
-    border: 2 px solid var(--InPurple);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.navigation-auto{
-    position: absolute;
+.galery {
     width: 100%;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
+.pag {
+    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
+    font-weight: 700;
 }
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
+
+.galery .fotos img {
+    width: 19.9%;
+    margin-right: 0;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
+
+@keyframes animacao {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
 }
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
+
+button {
+    all: unset;
+    cursor: pointer;
+    outline: revert;
 }
+
+.barra {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+}
+
+#linhas {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 680px;
+    height: 2px;
+    background: var(--black);
+    margin: 15px;
+}
+
+.pag {
+    font-size: 20px;
+}
+
+.brandimg {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.marcas {
+    background-color: var(--black);
+}
+
+.brandimg img {
+    width: 200px;
+    height: 200px;
+}
+
+.brand {
+    height: 203px;
+}
+
+.brand1 {
+    height: 203px;
+}
+
+.brand:hover {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #9400D3, #9b1dd2, #a64ecc) border-box;
+    border: 3px solid transparent;
+}
+
+.brand1:hover {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #00FF00, #3cff3c, #85ff85) border-box;
+    border: 3px solid transparent;
+}
+
+.b1 p {
+    padding-top: 2px;
+    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
+    color: #fff;
+    font-weight: bold;
+}
+
+.b1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (min-width: 370px) and (max-width:900px) {
     .navbar {
@@ -242,4 +345,25 @@
     #carrinho {
         display: none;
     }
+
+    .brandimg img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .brandimg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3%;
+    }
+    .brand{
+        height: 100px;
+    }
+    .brand1 {
+        height: 100px;
+    }
+    .fotos{
+        transform: scale(1.3);
+    }
+    
 }
