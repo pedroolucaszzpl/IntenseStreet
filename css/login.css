@@ -25,13 +25,11 @@ h1 {
 
 img {
    padding: 10px 0;
-   margin-left: 40%;
 }
 
 p {
    margin-left: 40%;
    color: white;
-
 }
 
 form {
@@ -97,6 +95,21 @@ label{
    color: #ccc;
    text-align: left;
    text-decoration:underline #9400D3;
+   margin: 15px;
+}
+.navbar-logo{
+   justify-content: center;
+   align-items: center;
+}
+/* .logo{
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+
+} */
+#id-img{
+   width: 250px !important;
+
 }
 
 .login {
@@ -127,4 +140,17 @@ label{
 }
 .cadastro:hover{
    text-decoration: underline var(--InPurple);
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+   .form {
+       margin: 10px 0; 
+   }
 }
