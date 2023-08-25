@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Bauhaus";
-    src: url(bauhaus://BauhausRegular.ttf);
+    src: url(/Bauhaus\ Font\ Family/);
 }
 
 .container {
@@ -38,7 +38,8 @@
 
 .navbar-logo {
     align-items: center;
-    width: 85px;
+    
+    width: 100px;
 }
 
 .content {
@@ -123,6 +124,7 @@
     font-family: "Gotham";
     padding-left: 5px;
 }
+
 
 /*slides*/
 .slider {
@@ -360,4 +362,8 @@ button {
     .brand1 {
         height: 100px;
     }
+    .fotos{
+        transform: scale(1.3);
+    }
+    
 }
