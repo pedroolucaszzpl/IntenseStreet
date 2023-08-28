@@ -35,7 +35,7 @@
             <div>
                 <button id="botao" type="reset" value="Entrar" onclick="Logar()">Logar</button>
             </div>
-            <a class="cadastro" href="cadastro.html">Não tem uma conta?
+            <a class="cadastro" href="cadastro.php">Não tem uma conta?
                  Clique aqui!</a>
         </div>
     </div>

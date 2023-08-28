@@ -3,7 +3,7 @@ function Logar(){
     var senha = '0000';
  
     if(document.getElementById('nome_login').value == usuario && document.getElementById('senha_login').value == senha){
-        window.location.href = "main.html"
+        window.location.href = "main.php"
     }else{
         alert("Senha incorreta, tente novamente...")
     }
