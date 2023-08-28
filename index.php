@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/login.js"></script>
-    <form method="post" action=""></form>
+    
     <title>Document</title>
 </head>
 
@@ -17,6 +16,7 @@
             <img id="id-img" src="img/logo1.png">
         </div>
         <div class="login">
+        <form method="post" action="login.php">
             <div class="form">
                 <label for="nome_login" id="nome_label">Usuário</label> <br>
                 <input id="nome_login" name="nome_login" required="required" type="text"
@@ -33,10 +33,14 @@
                 <div class="line"></div>
             </div>
             <div>
-                <button id="botao" type="reset" value="Entrar" onclick="Logar()">Logar</button>
+                <input id="botao" type="submit" value="Logar">
+                <!-- <button id="botao" type="reset" value="Entrar" onclick="Logar()">Logar</button> -->
             </div>
-            <a class="cadastro" href="cadastro.html">Não tem uma conta?
+            <a class="cadastro" href="cadastro.php">Não tem uma conta?
                  Clique aqui!</a>
+                    
+                </form>
+            </div> 
         </div>
     </div>
     <footer>
