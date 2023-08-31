@@ -15,6 +15,10 @@
     box-sizing: content-box;
 }
 
+span#icon{
+    color: #fff;
+}
+
 @font-face {
     font-family: "Bauhaus";
     src: url(/Bauhaus\ Font\ Family/);
