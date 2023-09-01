@@ -85,6 +85,4 @@
     </footer>
     <script src="js/homep.js"></script>
 </body>
-
->>>>>>> 1c4699b3e4d0cdf9cb21f15173629464338980df:main.php
 </html>
