@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/cadastro.js"></script>
     <link rel="stylesheet" href="css/cadastro.css">
-    
-    <title>Document</title>
+    <title>Cadastro</title>
 </head>
 <body>
-    <img src="img/logo1.png" width="300">
-    <form id="cadastroForm">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" required><br>
+    <div class='content'>
+        <div class= 'logo'>
+            <img id= id-img src="img/logo1.png" >
+        </div>
+        <div class= "login">
+            <form method="post" action="cadastrojs.php">
+                <div class='form'>
+                    <label for="nome">Nome:</label></br>
+                    <input type="text" id="nome" required><br>
+                </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" required><br>
+                <div class='form'>
+                    <label for="email">E-mail:</label> </br>
+                    <input type="email" id="email" required><br>
+                </div>
 
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" required><br>
+                <div class='form'>
+                    <label for="senha">Senha:</label></br>
+                    <input type="password" id="senha" required><br>
+                </div>
+                
+                <div id="linhas">
+                    <div class="line"></div>
+                </div>
+                
+                <input id="botao_login" type="submit" value="Cadastrar">
 
-        <button type="submit" onclick="cadastrar()">Cadastrar</button>
-
-    </form>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
