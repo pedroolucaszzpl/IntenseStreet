@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="navbar-logo" href="index.html">
+            <a class="navbar-logo" href="index.php">
                 <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
             </a>
             <div class="contentHead">
