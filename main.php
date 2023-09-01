@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /><!--Google Link Icon-->
     <link rel="stylesheet" href="css/main.css">
     <title>IntenseStreet HomePage</title>
 </head>
@@ -18,18 +21,30 @@
                 <div class="navbar-menu">
                     <ul class="navbar-items">
                         <li class="navbar-items-menu">
-                            <a class="nav-link" href="main.html" onclick="">Páginal Inicial</a>
-                            <select name="departamentos" id="departamentos">
+                            <a class="nav-link" href="main.php" onclick="">Páginal Inicial</a></li>
+                            <li><select name="departamentos" id="departamentos">
                                 <option value="" disabled selected hidden>Departamentos</option>
                                 <option value="calcados">Calçados</option>
                                 <option value="acessorios">Acessórios</option>
                                 <option value="vestuario">Vestuário</option>
-                                <option value="especiai">Edições Especiais</option>
-                                <option value="marcas">Marcas</option>
+                                <option value="especiai"><a href="especiais.php">Edições Especiais</a></option>
+                                
                             </select>
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div id="menu_vertical">
+            <span id="icon" class="material-symbols-outlined">
+                menu
+            </span>
+            <ul>
+                <li><a href="main.php">Página Inicial</a></li>
+                <li><a href="main.php">Calçados</a></li>
+                <li><a href="main.php">Acessórios</a></li>
+                <li><a href="main.php">Vestuário</a></li>
+                <li><a href="especiais.php">Edições Especiais</a></li>
+            </ul>
             </div>
             <div class="search">
                 <img id="lupa" src="img/lupa.png" alt="lupa">
@@ -59,6 +74,16 @@
                 </div>
             </section>
         </div>
+        <div class="slidesec">
+            <section class="galery">
+                <div class="fotos">
+                    <img src="img/homepage/1-Copia.png" alt="slide1">
+                    <img src="img/homepage/2-Copia.png" alt="slide2">
+                    <img src="img/homepage/4-Copia.png" alt="slide3">
+                    <img src="img/homepage/3-Copia.png" alt="slide4">
+                </div>
+            </section>
+        </div>
         <div class="marcas">
             <div class="barra">
                 <div id="linhas">
@@ -68,10 +93,10 @@
                 </div>
             </div>
             <div class="brandimg">
-                <div class="b1"><div class="brand1"><img src="img/homepage/adidas (1).png" alt=""></div> <p>Adidas</p></div>
-                <div class="b1"><div class="brand1"><img src="img/homepage/ous.png" alt=""></div> <p>OUS</p></div>
-                <div class="b1"><div class="brand"><img src="img/homepage/baw.png" alt=""></div> <p>BAW</p></div>
-                <div class="b1"><div class="brand"><img src="img/homepage/nike.png" alt=""></div> <p>Nike</p></div>
+                <div class="b1"><div class="brand br1"><img src="img/homepage/adidas (1).png" alt=""></div> <p>Adidas</p></div>
+                <div class="b1"><div class="brand br2"><img src="img/homepage/ous.png" alt=""></div> <p>OUS</p></div>
+                <div class="b1"><div class="brand br3"><img src="img/homepage/baw.png" alt=""></div> <p>BAW</p></div>
+                <div class="b1"><div class="brand br4"><img src="img/homepage/nike.png" alt=""></div> <p>Nike</p></div>
 
             </div>
         </div>
@@ -80,9 +105,44 @@
 
         </div>
     </main>
-    <footer>
-        
-    </footer>
+    <!-- Início do Rodapé -->
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Company Name © 2018</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="js/homep.js"></script>
 </body>
 </html>
