@@ -14,9 +14,13 @@
 <body>
     <header>
         <nav class="navbar">
+<<<<<<< HEAD
             <a class="navbar-logo" href="index.php">
                 <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
             </a>
+=======
+           
+>>>>>>> 16c0bef9bbe804e18ae4ad144dd6923ca171c5b3
             <div class="contentHead">
                 <div class="navbar-menu">
                     <ul class="navbar-items">
@@ -35,9 +39,10 @@
                 </div>
             </div>
             <div id="menu_vertical">
-            <span id="icon" class="material-symbols-outlined">
+            <span id="icon" class="material-symbols-outlined" onclick="clickMenu()">
                 menu
             </span>
+            <menu id="mvertical">
             <ul>
                 <li><a href="main.php">Página Inicial</a></li>
                 <li><a href="main.php">Calçados</a></li>
@@ -45,6 +50,7 @@
                 <li><a href="main.php">Vestuário</a></li>
                 <li><a href="especiais.php">Edições Especiais</a></li>
             </ul>
+            </menu>
             </div>
             <div class="search">
                 <img id="lupa" src="img/lupa.png" alt="lupa">
@@ -53,6 +59,9 @@
             <div class="buy">
                 <img id="carrinho" src="img/carrinho.png" alt="">
             </div>
+             <a class="navbar-logo" href="index.html">
+                <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
+            </a>
         </nav>
     </header>
     <main>
@@ -77,10 +86,10 @@
         <div class="slidesec">
             <section class="galery">
                 <div class="fotos">
-                    <img src="img/homepage/1-Copia.png" alt="slide1">
-                    <img src="img/homepage/2-Copia.png" alt="slide2">
-                    <img src="img/homepage/4-Copia.png" alt="slide3">
-                    <img src="img/homepage/3-Copia.png" alt="slide4">
+                    <img src="img/homepage/1response.png" alt="slide1">
+                    <img src="img/homepage/2response.png" alt="slide2">
+                    <img src="img/homepage/4response.png" alt="slide3">
+                    <img src="img/homepage/3response.png" alt="slide4">
                 </div>
             </section>
         </div>
@@ -111,31 +120,27 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Services</h3>
+                        <h3>Serviços</h3>
                         <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#">Compras</a></li>
+                            <li><a href="#">Entrega</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>About</h3>
+                        <h3>Sobre</h3>
                         <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Legacy</a></li>
+                            <li><a href="#">Companhia</a></li>
+                            <li><a href="#">Quem Somos nós?</a></li>
+                            <li><a href="#">Politica</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Careers</h3>
+                        <h3></h3>
                         <ul>
-                            <li><a href="#">Job openings</a></li>
-                            <li><a href="#">Employee success</a></li>
-                            <li><a href="#">Benefits</a></li>
+                        <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon ion-social-instagram"></i></a></li>
                         </ul>
-                    </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Company Name © 2018</p>
                     </div>
                 </div>
             </div>
@@ -143,6 +148,14 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="js/homep.js"></script>
+    <script>
+        function clickMenu(){
+            var mvertical = document.getElementById('mvertical');
+            if(mvertical.style.display == 'block'){
+                mvertical.style.display = 'none';
+            }else{
+            mvertical.style.display = 'block';
+         }}
+       </script>
 </body>
 </html>

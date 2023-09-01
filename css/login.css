@@ -37,8 +37,17 @@ form {
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-top: 50px;
+   justify-content: center;
 }
+
+.container {
+   max-width: 400px;
+   margin: 50px auto;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
 
 input [type="text"],
 input[type="password"] {
@@ -70,9 +79,9 @@ input#nome_login:focus {
    border: 4px solid var(--InPurple);
 }
 
-input .botao {
+input#botao_login {
    background-color: var(--Green);
-   color: white;
+   color:  #ffff;
    padding: 10px;
    border: none;
    border-radius: 10px;
@@ -82,9 +91,6 @@ input .botao {
    margin: 10px;
 }
 
-input .botao:hover {
-   background-color: green;
-}
 
 a {
    margin: 10px;
@@ -95,23 +101,23 @@ label{
    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
    color: #ccc;
    text-align: left;
-   text-decoration:underline #9400D3;
    margin: 15px;
 }
 .navbar-logo{
    justify-content: center;
    align-items: center;
 }
-/* .logo{
-   justify-content: center;
-   align-items: center;
-   width: 100px;
 
-} */
 #id-img{
    width: 250px !important;
+ 
 
 }
+
+.logo{
+   display: contents;
+   width: 100%;
+ }
 
 .login {
    display: grid;
