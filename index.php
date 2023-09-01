@@ -11,7 +11,6 @@
 
 <body>
     <div class="content">
-        <!-- <h1>Formulário de login</h1>    -->
         <div class="logo">
             <img id="id-img" src="img/logo1.png">
         </div>
@@ -33,8 +32,7 @@
                 <div class="line"></div>
             </div>
             <div>
-                <input id="botao" type="submit" value="Logar">
-                <!-- <button id="botao" type="reset" value="Entrar" onclick="Logar()">Logar</button> -->
+                <input id="botao_login" type="submit" value="Logar">
             </div>
             <a class="cadastro" href="cadastro.php">Não tem uma conta?
                  Clique aqui!</a>
