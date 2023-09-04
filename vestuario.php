@@ -32,15 +32,15 @@
                 <span id="icon" class="material-symbols-outlined" onclick="clickMenu()">
                     menu
                 </span>
-                <menu id="mvertical">
+                <aside id="mvertical">
                     <ul>
-                        <li><a href="main.php">Página Inicial</a></li>
-                        <li><a href="main.php">Calçados</a></li>
-                        <li><a href="main.php">Acessórios</a></li>
-                        <li><a href="main.php">Vestuário</a></li>
-                        <li><a href="especiais.php">Edições Especiais</a></li>
-                    </ul>
-                </menu>
+                     <li><a href="main.php">Página Inicial</a></li>
+                     <li><a href="main.php">Calçados</a></li>
+                     <li><a href="main.php">Acessórios</a></li>
+                     <li><a href="main.php">Vestuário</a></li>
+                     <li><a href="especiais.php">Edições Especiais</a></li>
+                     </ul>
+                </aside>
             </div>
             <div class="search">
                 <img id="lupa" src="img/lupa.png" alt="lupa">
