@@ -15,21 +15,18 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="navbar-logo" href="index.php">
-                <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
-            </a>
             <div class="contentHead">
                 <div class="navbar-menu">
                     <ul class="navbar-items">
                         <li class="navbar-items-menu">
                             <a class="nav-link" href="main.php" onclick="">Páginal Inicial</a>
                         </li>
-                        <li><select name="departamentos" id="departamentos">
+                        <li><select name="departamentos" id="departamentos" onchange="redirectToPage(this)">
                                 <option value="" disabled selected hidden>Departamentos</option>
                                 <option value="calcados">Calçados</option>
                                 <option value="acessorios">Acessórios</option>
                                 <option value="vestuario">Vestuário</option>
-                                <option value="especiai"><a href="especiais.php">Edições Especiais</a></option>
+                               <option value="especial">Edições Especiais</option>
 
                             </select>
                         </li>
@@ -104,19 +101,19 @@
             </div>
             <div class="brandimg">
                 <div class="b1">
-                    <div class="brand br1"><img src="img/homepage/adidas (1).png" alt=""></div>
+                    <div class="brand br1"><img class="gren" src="img/homepage/adidas (1).png" alt=""></div>
                     <p>Adidas</p>
                 </div>
                 <div class="b1">
-                    <div class="brand br2"><img src="img/homepage/ous.png" alt=""></div>
+                    <div class="brand br2"><img class="purpl" src="img/homepage/ous.png" alt=""></div>
                     <p>OUS</p>
                 </div>
                 <div class="b1">
-                    <div class="brand br3"><img src="img/homepage/baw.png" alt=""></div>
+                    <div class="brand br3"><img class="gren" src="img/homepage/baw.png" alt=""></div>
                     <p>BAW</p>
                 </div>
                 <div class="b1">
-                    <div class="brand br4"><img src="img/homepage/nike.png" alt=""></div>
+                    <div class="brand br4"><img class="purpl" src="img/homepage/nike.png" alt=""></div>
                     <p>Nike</p>
                 </div>
 
@@ -161,16 +158,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function clickMenu() {
-            var mvertical = document.getElementById('mvertical');
-            if (mvertical.style.display == 'block') {
-                mvertical.style.display = 'none';
-            } else {
-                mvertical.style.display = 'block';
-            }
-        }
-    </script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
