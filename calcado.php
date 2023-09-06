@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/modelo.css">
+    <link rel="stylesheet" href="css/calcados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /><!--Google Link Icon-->
-    <title>Document</title>
+    <title>IntenseStreet Calçados</title>
 </head>
+
 <body>
 <header>
         <nav class="navbar">
@@ -57,9 +61,39 @@
             </a>
         </nav>
     </header>
-    <main>
-        
-    </main>
+   <main> 
+    <div class="content">
+        <div class="barra">
+            <div id="linhas">
+                <div class="line"></div>
+                <p class="pag">Vestuário</p>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="vest">
+            <div class="camisa1">
+                <img src="img/edicaoesp/blusas/b1.jpg" alt="Camiseta Streetwear">
+                <p class="desc">Camisa Santa Cruz-Vermelha</p>
+                <p class="price">R$103,00</p>
+            </div>
+            <div class="moletom2">
+                <img src="img/edicaoesp/moletom/m1.jpeg" alt="Camiseta Streetwear">
+                <p class="desc">Moletom California Club- Rosa</p>
+                <p class="price">R$173,00</p>
+            </div>
+            <div class="calca1">
+                <img src="img/edicaoesp/blusas/b1.jpg" alt="Camiseta Streetwear">
+                <p class="desc">Camisa Santa Cruz-Vermelha</p>
+                <p class="price">R$103,00</p>
+            </div>
+            <div class="moletom1">
+                <img src="img/edicaoesp/moletom/m1.jpeg" alt="Camiseta Streetwear">
+                <p class="desc">Moletom California Club- Rosa</p>
+                <p class="price">R$173,00</p>
+            </div>
+        </div>
+    </div>
+   </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">
         <footer>
@@ -92,6 +126,8 @@
             </div>
         </footer>
     </div>
-    <script src="js/main.js" defer></script>
+<script src="js/homep.js" async></script>
+<script src="js/main.js" defer></script>
 </body>
+
 </html>
