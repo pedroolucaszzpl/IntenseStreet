@@ -15,17 +15,17 @@
             <form method="post" action="cadastrojs.php">
                 <div class='form'>
                     <label for="nome">Nome:</label></br>
-                    <input type="text" id="nome" required><br>
+                    <input type="text" id="nome" name="nome" required><br>
                 </div>
 
                 <div class='form'>
                     <label for="email">E-mail:</label> </br>
-                    <input type="email" id="email" required><br>
+                    <input type="email" id="email" name="email" required><br>
                 </div>
 
                 <div class='form'>
                     <label for="senha">Senha:</label></br>
-                    <input type="password" id="senha" required><br>
+                    <input type="password" id="senha" name="senha" required><br>
                 </div>
                 
                 <div id="linhas">
