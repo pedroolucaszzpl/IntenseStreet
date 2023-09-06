@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <!--Google Link Icon-->
-    <link rel="stylesheet" href="css/main.css">
-    <title>IntenseStreet HomePage</title>
+    <link rel="stylesheet" href="css/modelo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /><!--Google Link Icon-->
+    <title>Document</title>
 </head>
-
 <body>
-    <header>
+<header>
         <nav class="navbar">
             <div class="contentHead">
                 <div class="navbar-menu">
@@ -63,66 +58,7 @@
         </nav>
     </header>
     <main>
-        <div class="barra">
-            <div id="linhas">
-                <div class="line"></div>
-                <p class="pag">IntenseStreet</p>
-                <div class="line"></div>
-            </div>
-        </div>
-        </div>
-        <div class="slide first">
-            <section class="galery">
-                <div class="fotos">
-                    <img src="img/homepage/1.png" alt="slide1">
-                    <img src="img/homepage/2.png" alt="slide2">
-                    <img src="img/homepage/4.png" alt="slide3">
-                    <img src="img/homepage/3.png" alt="slide4">
-                </div>
-            </section>
-        </div>
-        <div class="slidesec">
-            <section class="galery">
-                <div class="fotos">
-                    <img src="img/homepage/1response.png" alt="slide1">
-                    <img src="img/homepage/2response.png" alt="slide2">
-                    <img src="img/homepage/4response.png" alt="slide3">
-                    <img src="img/homepage/3response.png" alt="slide4">
-                </div>
-            </section>
-        </div>
-        <div class="marcas">
-            <div class="barra">
-                <div id="linhas">
-                    <div class="line"></div>
-                    <p class="pag">Marcas</p>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <div class="brandimg">
-                <div class="b1">
-                    <div class="brand br1"><img class="gren" src="img/homepage/adidas (1).png" alt=""></div>
-                    <p>Adidas</p>
-                </div>
-                <div class="b1">
-                    <div class="brand br2"><img class="purpl" src="img/homepage/ous.png" alt=""></div>
-                    <p>OUS</p>
-                </div>
-                <div class="b1">
-                    <div class="brand br3"><img class="gren" src="img/homepage/baw.png" alt=""></div>
-                    <p>BAW</p>
-                </div>
-                <div class="b1">
-                    <div class="brand br4"><img class="purpl" src="img/homepage/nike.png" alt=""></div>
-                    <p>Nike</p>
-                </div>
 
-            </div>
-        </div>
-
-        <div>
-
-        </div>
     </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">
@@ -156,9 +92,6 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js" defer></script>
 </body>
-
 </html>
