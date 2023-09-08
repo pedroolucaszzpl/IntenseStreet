@@ -70,7 +70,6 @@
                 <div class="line"></div>
             </div>
         </div>
-        </div>
         <div class="slide first">
             <section class="galery">
                 <div class="fotos">

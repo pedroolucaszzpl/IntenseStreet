@@ -21,6 +21,10 @@ body {
 }
 
 /*cabeçalho*/
+@font-face {
+    font-family: "Bauhaus";
+    src: url(../BauhausFont/BauhausRegular.ttf);
+}
 #icon {
     color: #fff;
     cursor: pointer;
@@ -47,10 +51,7 @@ aside {
     display: none;
 }
 
-@font-face {
-    font-family: "Bauhaus";
-    src: url(/Bauhaus\ Font\ Family/);
-}
+
 
 .container {
     max-width: 1140px;
@@ -183,7 +184,60 @@ aside {
     background-color: var(--InGreen);
     border-radius: 3px;
 }
+/*main*/
+.barra {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+}
 
+#linhas {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 50%;
+    height: 2px;
+    background: var(--black);
+    margin: 15px;
+}
+
+.pag {
+    font-size: 20px;
+    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
+    font-weight: 700;
+}
+.clothes{
+    padding-top: 70px;
+    display:inline-flex;
+    justify-content: space-between;
+    background: #211B15;
+    width: 100%;
+}
+
+.clothes img{
+    width: 300px;
+    height: 300px;
+}
+
+.clothes div{
+   padding-left: 35px;
+   padding-right:35px;
+   text-align: left;
+}
+
+p.desc{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Bauhaus";
+}
+p.price{
+    color: #fff;
+    font-size: 32px;
+    font-family: "Bauhaus";
+    font-weight: bold;
+}
 /*footer css*/
 
 .footer-clean {

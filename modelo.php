@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/modelo.css">
+    <link rel="stylesheet" href="css/vestuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /><!--Google Link Icon-->
     <title>Document</title>
 </head>
@@ -58,7 +60,41 @@
         </nav>
     </header>
     <main>
-
+        <div class="model">
+            <div class="barra">
+                <div id="linhas">
+                    <div class="line"></div>
+                    <p class="pag">Vestuário</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="clothes">
+                <div class="shirt">
+                    <img src="img/blusas/b1.jpg" alt="">
+                    <p class="desc">CAMISA SANTA CRUZ COGUMELOS</p>
+                    <p class="desc">COR-VERMELHA</p>
+                    <p class="price">R$89,90</p>
+                </div>
+                <div class="sweater">
+                    <img src="img/moletom/m1.jpeg" alt="">
+                    <p class="desc">MOLETOM CALIFORNIA CLUB 1998</p>
+                    <p class="desc">COR-PRETO</p>
+                    <p class="price">R$169,90</p>
+                </div>
+                <div class="shirt">
+                    <img src="img/blusas/b1.jpg" alt="">
+                    <p class="desc">CAMISA SANTA CRUZ COGUMELOS</p>
+                    <p class="desc">COR-VERMELHA</p>
+                    <p class="price">R$89,90</p>
+                </div>
+                <div class="sweater">
+                    <img src="img/moletom/m1.jpeg" alt="">
+                    <p class="desc">MOLETOM CALIFORNIA CLUB 1998</p>
+                    <p class="desc">COR-PRETO</p>
+                    <p class="price">R$169,90</p>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">

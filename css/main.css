@@ -193,11 +193,6 @@ menu {
     overflow: hidden;
 }
 
-.pag {
-    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
-    font-weight: 700;
-}
-
 .galery .fotos {
     width: 500%;
     animation-name: animacao;
@@ -274,6 +269,8 @@ button {
 
 .pag {
     font-size: 20px;
+    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
+    font-weight: 700;
 }
 
 .brandimg {
