@@ -70,31 +70,102 @@
             </div>
             <div class="clothes">
                 <div class="shirt">
-                    <img src="img/blusas/b1.jpg" alt="">
-                    <p class="desc">CAMISA SANTA CRUZ COGUMELOS</p>
-                    <p class="desc">COR-VERMELHA</p>
-                    <p class="price">R$89,90</p>
+                    <img src="img/vestuario/L1.jpeg" alt="">
+                    <p class="desc">CONJUNTO FEMININO CROPPED+SHORT+ACESSÓRIOS</p>
+                    <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
+                    <p class="price">R$209,90</p>
                 </div>
                 <div class="sweater">
-                    <img src="img/moletom/m1.jpeg" alt="">
-                    <p class="desc">MOLETOM CALIFORNIA CLUB 1998</p>
-                    <p class="desc">COR-PRETO</p>
-                    <p class="price">R$169,90</p>
+                    <img src="img/vestuario/L2.jpg" alt="">
+                    <p class="desc">CONJUNTO FEMININO MOLETOM+SHORT+ACESSÓRIOS</p>
+                    <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
+                    <p class="price">R$229.90</p>
                 </div>
                 <div class="shirt">
-                    <img src="img/blusas/b1.jpg" alt="">
-                    <p class="desc">CAMISA SANTA CRUZ COGUMELOS</p>
-                    <p class="desc">COR-VERMELHA</p>
-                    <p class="price">R$89,90</p>
+                    <img src="img/vestuario/L3.jpg" alt="">
+                    <p class="desc">CONJUNTO FEMININO BLUSÃO+SHORT+ACESSÓRIOS</p>
+                    <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
+                    <p class="price">R$319,90</p>
                 </div>
                 <div class="sweater">
-                    <img src="img/moletom/m1.jpeg" alt="">
-                    <p class="desc">MOLETOM CALIFORNIA CLUB 1998</p>
-                    <p class="desc">COR-PRETO</p>
-                    <p class="price">R$169,90</p>
+                    <img src="img/vestuario/L4.jpg" alt="">
+                    <p class="desc">CONJUNTO FEMININO BLUSÃO+SHORT+ACESSÓRIOS</p>
+                    <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
+                    <p class="price">R$304,90</p>
                 </div>
             </div>
         </div>
+        <div class="model">
+            <div class="barra">
+                <div id="linhas">
+                    <div class="line"></div>
+                    <p class="pag">Acessórios</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="clothes">
+                <div class="shirt">
+                    <img src="img/modelos/bone.jpg" alt="">
+                    <p class="desc">BONÉ NIKE</p>
+                    <p class="desc">COR-BRANCO</p>
+                    <p class="price">R$99,90</p>
+                </div>
+                <div class="sweater">
+                    <img src="img/modelos/corrente.jpg" alt="">
+                    <p class="desc">COLAR JORDAN</p>
+                    <p class="desc">COR-PRATA/DOURADO</p>
+                    <p class="price">R$109,90</p>
+                </div>
+                <div class="shirt">
+                    <img src="img/modelos/chapéu.jpg" alt="">
+                    <p class="desc">CHAPÉU BUCKET NIKE</p>
+                    <p class="desc">COR-PRETO</p>
+                    <p class="price">R$114,90</p>
+                </div>
+                <div class="sweater">
+                    <img src="img/modelos/bolsa.jpg" alt="">
+                    <p class="desc">BOLSA TOMMY HILFIGER</p>
+                    <p class="desc">COR-PRETO</p>
+                    <p class="price">R$229,90</p>
+                </div>
+            </div>
+        </div>
+        <div class="model">
+            <div class="barra">
+                <div id="linhas">
+                    <div class="line"></div>
+                    <p class="pag">Calçados</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="clothes">
+                <div class="shirt">
+                    <img src="https://images.tcdn.com.br/img/img_prod/690339/tenis_ous_imigrante_pb_gold_essencial_black_10881_1_aa781a830ec58927c93a60b487aff286.jpg" alt="">
+                    <p class="desc">OUS IMIGRANTE PB GOLD ESSENCIAL BLACK</p>
+                    <p class="desc">COR-PRETO</p>
+                    <p class="price">R$329,90</p>
+                </div>
+                <div class="sweater">
+                    <img src="https://www.tradeinn.com/f/13855/138556053/nike-air-max-sc-leather-trainers.jpg" alt="">
+                    <p class="desc">NIKE AIR MAX SC LEATHER TRAINERS WHITE</p>
+                    <p class="desc">COR-BRANCO</p>
+                    <p class="price">R$309,90</p>
+                </div>
+                <div class="shirt">
+                    <img src="https://static.lojafeiraodoscalcados.com.br/public/feiraodoscalcados/imagens/produtos/tenis-adidas-vs-pace-2-0-branco-6488e78a8c9d6.jpg" alt="">
+                    <p class="desc">ADIDAS VS PACE 2.0</p>
+                    <p class="desc">COR-BRANCO</p>
+                    <p class="price">R$339,40</p>
+                </div>
+                <div class="sweater">
+                    <img src="https://static.netshoes.com.br/produtos/tenis-baw-break-anniversary-masculino/19/QNL-0256-319/QNL-0256-319_zoom1.jpg?ts=1692218107&ims=420x" alt="">
+                    <p class="desc">BAW BREAK ANNIVERSARY MASCULINO</p>
+                    <p class="desc">COR-BRANCO E BEGE</p>
+                    <p class="price">R$369,90</p>
+                </div>
+            </div>
+        </div>
+        
     </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">
