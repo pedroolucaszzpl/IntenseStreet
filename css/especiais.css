@@ -43,6 +43,10 @@ body {
     display: none;
 }
 
+menu{
+    display: none;
+}
+
 aside {
     display: none;
 }
@@ -266,7 +270,7 @@ div#linhas {
 }
 
 .line {
-    width: 40%;
+    width: 35%;
     height: 2px;
     background: var(--black);
     margin: 15px;
@@ -485,6 +489,18 @@ p.price{
 
 
 @media screen and (max-width:750px) {
+    .line{
+        width: 20%;
+    }
+    p.pag{
+        font-size: 16px;
+    }
+    .baw{
+        display: inline-table;
+    }
+    .ous{
+        display: inline-table;
+    }
     #menu_vertical {
         display: block;
     }
@@ -517,6 +533,25 @@ p.price{
 }
 
 @media screen and (min-width: 751px) and (max-width:1000px) {
+    .line{
+        width: 35%;
+    }
+    p.pag{
+        font-size: 16px;
+    }
+    .baw{
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3%;
+    }
+    
+    .ous{
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3%;
+    }
     #menu_vertical {
         display: block;
     }

@@ -19,7 +19,7 @@
                 <div class="navbar-menu">
                     <ul class="navbar-items">
                         <li class="navbar-items-menu">
-                            <a class="nav-link" href="main.php" onclick="">Páginal Inicial</a>
+                            <a class="nav-link" href="index.php" onclick="">Páginal Inicial</a>
                         </li>
                         <li><select name="departamentos" id="departamentos" onchange="redirectToPage(this)">
                                 <option value="" disabled selected hidden>Departamentos</option>
