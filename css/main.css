@@ -69,8 +69,7 @@ menu {
     align-items: center;
     justify-content: center;
 }
-
-.navbar-menu ul {
+.navbar-menu ul{
     align-items: center;
 }
 
@@ -167,7 +166,7 @@ menu {
     padding-left: 5px;
 }
 
-.logarConta {
+.logarConta{
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -175,18 +174,15 @@ menu {
     width: 70px;
     height: 40px;
 }
-
-.logarConta a {
+.logarConta a{
     text-decoration: none;
     color: #fff;
     font-family: "Gotham";
 }
-
-.logarConta:hover {
+.logarConta:hover{
     background-color: var(--InGreen);
     border-radius: 3px;
 }
-
 .slidesec {
     display: none;
 }
@@ -292,9 +288,8 @@ button {
 
 .brandimg img {
     width: 200px;
-    height: 200px;
-    border: 3px solid transparent;
-    /* Adicione uma borda transparente */
+    height: 200px ;
+    border: 3px solid transparent; /* Adicione uma borda transparente */
     transition: border 0.3s;
 }
 
@@ -306,7 +301,6 @@ button {
     background: linear-gradient(white, white) padding-box, linear-gradient(to right, #00FF00, #3cff3c, #85ff85) border-box;
     border: 3px solid transparent;
 }
-
 .brandimg img.purpl:hover {
     background: linear-gradient(white, white) padding-box, linear-gradient(to right, #9400D3, #9b1dd2, #a64ecc) border-box;
     border: 3px solid transparent;
@@ -502,7 +496,7 @@ button {
         width: 200px;
     }
 
-    .ask {
+    .ask{
         width: 450px;
     }
 
@@ -535,16 +529,13 @@ button {
         grid-gap: 3%;
         width: 100%;
     }
-
-    .brandimg p {
+    .brandimg p{
         padding-top: 60px;
     }
-
     .brand {
         height: 100px;
-
+        
     }
-
     .slide {
         display: none;
     }
