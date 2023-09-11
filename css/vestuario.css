@@ -316,7 +316,7 @@ p.price{
     opacity: 0.6;
 }
 
-@media screen and (min-width: 480px) and (max-width:750px) {
+@media screen and  (max-width:750px) {
     #menu_vertical {
         display: block;
     }
