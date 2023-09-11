@@ -10,11 +10,11 @@ function clickMenu() {
 function redirectToPage(select) {
     var selectedValue = select.value;
     if (selectedValue === "calcados") {
-        window.location.href = "calcado.php";
+        window.location.href = "modelo.php";
     } else if (selectedValue === "acessorios") {
-        window.location.href = "calcado.php";
+        window.location.href = "modelo.php";
     } else if (selectedValue === "vestuario") {
-        window.location.href = "calcado.php";
+        window.location.href = "modelo.php";
     } else if (selectedValue === "especial") {
         window.location.href = "especiais.php";
     }

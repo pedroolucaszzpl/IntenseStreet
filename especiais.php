@@ -59,13 +59,15 @@
     </div>
     <section class="sectionPurple">
         <div class="tenis">
-            <img id="imgtst" src="img/edições especiais/tenis.png"> <img id="imgtst"
-                src="img/edições especiais/sapato.webp"> <img id="imgtst" src="img/edições especiais/t2.jpg"> <img
-                id="imgtst" src="img/edições especiais/t1.webp"> <img id="imgtst"
-                src="img/edições especiais/1_4_83.jpg"> <img id="imgtst" src="img/edições especiais/1.webp"> <img
-                id="imgtst" src="img/edições especiais/1f084b5958.webp"> <img id="imgtst"
-                src="img/edições especiais/tenis-ous.avif"> <img id="imgtst"
-                src="img/edições especiais/tenis_ous_phibo_webp.webp">
+            <img id="imgtst" src="img/edicaoesp/ous/ous1.jpg"> 
+            <img id="imgtst"src="img/edicaoesp/ous/ous2.webp"> 
+            <img id="imgtst" src="img/edicaoesp/ous/ous3.webp">
+            <img id="imgtst" src="img/edicaoesp/ous/ous4.webp">
+            <img id="imgtst" src="img/edicaoesp/ous/ous5.webp"> 
+            <img id="imgtst" src="img/edicaoesp/ous/ous6.webp"> 
+            <!--<img id="imgtst" src="img/edicaoesp/ous/ous7.jpg"> 
+            <img id="imgtst"src="img/edicaoesp/ous/ous8.webp"> 
+            <img id="imgtst"src="img/edicaoesp/ous/ous9.avif">-->
         </div>
     </section>
     <div class="barra_">

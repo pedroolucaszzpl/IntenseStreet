@@ -251,26 +251,7 @@ aside {
 }
 /*main*/
 
-.vest {
-    padding-top: 20px;
-    background-color: #211B15;
-    display: flex;
-    align-items: center; /* Alinha horizontalmente */
-    justify-content: center;
-    text-align: center;
-}
-.vest img{
-    width: 350px;
-}
 
-p.desc{
-    color: #fff;
-    font-weight: bold;
-}
-p.price{
-    color: #fff;
-    font-size: 24px;
-}
 /*footer css*/
 
 .footer-clean {

@@ -16,7 +16,7 @@
                 <div class="navbar-menu">
                     <ul class="navbar-items">
                         <li class="navbar-items-menu">
-                            <a class="nav-link" href="main.php" onclick="">Páginal Inicial</a>
+                            <a class="nav-link" href="index.php" onclick="">Páginal Inicial</a>
                         </li>
                         <li><select name="departamentos" id="departamentos" onchange="redirectToPage(this)">
                                 <option value="" disabled selected hidden>Departamentos</option>
@@ -36,10 +36,10 @@
                 </span>
                 <menu id="mvertical">
                     <ul>
-                        <li><a href="main.php">Página Inicial</a></li>
-                        <li><a href="main.php">Calçados</a></li>
-                        <li><a href="main.php">Acessórios</a></li>
-                        <li><a href="main.php">Vestuário</a></li>
+                        <li><a href="index.php">Página Inicial</a></li>
+                        <li><a href="vestuario.php">Calçados</a></li>
+                        <li><a href="vestuario.php">Acessórios</a></li>
+                        <li><a href="vestuario.php">Vestuário</a></li>
                         <li><a href="especiais.php">Edições Especiais</a></li>
                     </ul>
                 </menu>

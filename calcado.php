@@ -62,37 +62,7 @@
         </nav>
     </header>
    <main> 
-    <div class="content">
-        <div class="barra">
-            <div id="linhas">
-                <div class="line"></div>
-                <p class="pag">Vestuário</p>
-                <div class="line"></div>
-            </div>
-        </div>
-        <div class="vest">
-            <div class="camisa1">
-                <img src="img/edicaoesp/blusas/b1.jpg" alt="Camiseta Streetwear">
-                <p class="desc">Camisa Santa Cruz-Vermelha</p>
-                <p class="price">R$103,00</p>
-            </div>
-            <div class="moletom2">
-                <img src="img/edicaoesp/moletom/m1.jpeg" alt="Camiseta Streetwear">
-                <p class="desc">Moletom California Club- Rosa</p>
-                <p class="price">R$173,00</p>
-            </div>
-            <div class="calca1">
-                <img src="img/edicaoesp/blusas/b1.jpg" alt="Camiseta Streetwear">
-                <p class="desc">Camisa Santa Cruz-Vermelha</p>
-                <p class="price">R$103,00</p>
-            </div>
-            <div class="moletom1">
-                <img src="img/edicaoesp/moletom/m1.jpeg" alt="Camiseta Streetwear">
-                <p class="desc">Moletom California Club- Rosa</p>
-                <p class="price">R$173,00</p>
-            </div>
-        </div>
-    </div>
+    
    </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">
