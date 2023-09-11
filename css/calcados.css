@@ -183,7 +183,7 @@ aside {
     background-color: var(--InGreen);
     border-radius: 3px;
 }
-@media screen and (min-width: 370px) and (max-width:750px) {
+@media screen and (max-width:750px) {
     #menu_vertical {
         display: block;
     }

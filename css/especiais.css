@@ -484,7 +484,7 @@ p.price{
 }
 
 
-@media screen and (min-width: 370px) and (max-width:750px) {
+@media screen and (max-width:750px) {
     #menu_vertical {
         display: block;
     }
