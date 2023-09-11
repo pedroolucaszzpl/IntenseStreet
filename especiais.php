@@ -6,33 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /><!--Google Link Icon-->
-    <link rel="stylesheet" href="css/especiais.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--Google Link Icon-->
+    <link rel="stylesheet" href="./css/especiais.css">
     <title>IntenseStreet Páginas Especial</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a class="navbar-logo" href="index.php">
-                <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
-            </a>
             <div class="contentHead">
                 <div class="navbar-menu">
                     <ul class="navbar-items">
                         <li class="navbar-items-menu">
-                            <a class="nav-link" href="main.html" onclick="">Páginal Inicial</a>
-                            <select name="departamentos" id="departamentos">
+                            <a class="nav-link" href="main.php" onclick="">Páginal Inicial</a>
+                        </li>
+                        <li><select name="departamentos" id="departamentos" onchange="redirectToPage(this)">
                                 <option value="" disabled selected hidden>Departamentos</option>
                                 <option value="calcados">Calçados</option>
                                 <option value="acessorios">Acessórios</option>
                                 <option value="vestuario">Vestuário</option>
-                                <option value="especiai">Edições Especiais</option>
-                                <option value="marcas">Marcas</option>
+                                <option value="especial">Edições Especiais</option>
+
                             </select>
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div id="menu_vertical">
+                <span id="icon" class="material-symbols-outlined" onclick="clickMenu()">
+                    menu
+                </span>
+                <menu id="mvertical">
+                    <ul>
+                        <li><a href="main.php">Página Inicial</a></li>
+                        <li><a href="main.php">Calçados</a></li>
+                        <li><a href="main.php">Acessórios</a></li>
+                        <li><a href="main.php">Vestuário</a></li>
+                        <li><a href="especiais.php">Edições Especiais</a></li>
+                    </ul>
+                </menu>
             </div>
             <div class="search">
                 <img id="lupa" src="img/lupa.png" alt="lupa">
@@ -40,61 +53,98 @@
             </div>
             <div class="buy">
                 <img id="carrinho" src="img/carrinho.png" alt="">
-            </div class="contentBody">
-
+            </div>
+            <div class="logarConta">
+                <a href="index.php">Logar</a>
+            </div>
+            <a class="navbar-logo" href="main.php">
+                <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
+            </a>
+        </nav>
     </header>
+    <main>
+        <div class="espedition">
+            <div class="barra">
+                <div id="linhas">
+                    <div class="line"></div>
+                    <p class="pag">EDIÇÕES ESPECIAIS</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+                <div class="sePurple"></div>
+                <div class="calcous">
+                    <img src="img/edicaoesp/ous/ous.png" alt="">
+                    <p>Calçados</p>
+                    <div class="linep"></div>
+                </div>
+                <div class="ous">
+                <div class="tenisous">
+                    <img src="img/edicaoesp/ous/ous1.jpg" alt="">
+                    <p class="name">TÊNIS OUS IMIGRANTE PRETO AMARELO HOLOGRÁFICO ESSENCIAL</p>
+                    <p class="price">R$369,90</p>
+                </div>
+                <div class="tenisous">
+                    <img src="img/edicaoesp/ous/ous2.webp" alt="">
+                    <p class="name">TÊNIS OUS IMIGRANTE 2 OE- Masculino</p>
+                    <p class="price">R$369,90</p>
+                </div>
+                <div class="tenisous">
+                    <img src="img/edicaoesp/ous/ous7.jpg" alt=""> <!--MUDAR-->
+                    <p class="name">TÊNIS OUS IMIGRANTE PRETO FURTA COR</p>
+                    <p class="price">R$399,99</p>
+                </div>
+                <div class="tenisous">
+                    <img src="img/edicaoesp/ous/ous9.avif" alt="">
+                    <p class="name">TÊNIS OUS IMIGRANTE CREME UV ESSENIAL</p>
+                    <p class="price">R$429,90</p>
+                </div>
+                <div class="tenisous">
+                    <img src="img/edicaoesp/ous/ous11.png" alt="">
+                    <p class="name">TÊNIS BETS X ANGELI "BOB CUSP MATERIAL" IMPERIAL</p>
+                    <p class="price">R$589,90</p>
+                </div>
+            </div>
+            <div class="space">
+                 <div class="line"></div>
+            </div>
+            <div class="secGreen"></div>
+            <div class="camibaw">
+                    <img src="img/edicaoesp/baw/baw.png" alt="">
+                    <p>Camisetas</p>
+                    <div class="linep"></div>
+            </div>
+            <div class="baw">
+                <div class="camisabaw">
+                    <img src="img/edicaoesp/baw/camiseta4.jpg" alt="">
+                    <p class="name">CAMISETA SELFIE LOGO PRETA</p>
+                    <p class="price">R$139,90</p>
+                </div>
+                <div class="camisabaw">
+                    <img src="img/edicaoesp/baw/camiseta5.jpg" alt="">
+                    <p class="name">CAMISETA MC REGULAR RIDING 4 FUN</p>
+                    <p class="price">R$149,90</p>
+                </div>
+                <div class="camisabaw">
+                    <img src="img/edicaoesp/baw/camiseta7.jpg" alt="">
+                    <p class="name">CAMISETA MC REGULAR CHILL</p>
+                    <p class="price">R$129,00</p>
+                </div>
+                <div class="camisabaw">
+                    <img src="img/edicaoesp/baw/camiseta6.jpg" alt="">
+                    <p class="name">CAMISETA MC REGULAR MELTING</p>
+                    <p class="price">R$149,90</p>
+                </div>
+                <div class="camisabaw">
+                    <img src="img/edicaoesp/baw/camiseta9.jpg" alt="">
+                    <p class="name">CAMISETA MC SKATE PENCIL</p>
+                    <p class="price">R$149,90</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <div class="barra">
-        <div id="linhas">
-            <div class="line"></div>
-            <p class="pag">Edições Especiais</p>
-            <div class="line"></div>
-        </div>
-    </div>
-    <div class="calçados">
-        <div id="linha">
-            <p class="fonte">Calçados</p>
-            <div class="lines"></div>
-        </div>
-    </div>
-    <section class="sectionPurple">
-        <div class="tenis">
-            <img id="imgtst" src="img/edicaoesp/ous/ous1.jpg"> 
-            <img id="imgtst"src="img/edicaoesp/ous/ous2.webp"> 
-            <img id="imgtst" src="img/edicaoesp/ous/ous3.webp">
-            <img id="imgtst" src="img/edicaoesp/ous/ous4.webp">
-            <img id="imgtst" src="img/edicaoesp/ous/ous5.webp"> 
-            <img id="imgtst" src="img/edicaoesp/ous/ous6.webp"> 
-            <!--<img id="imgtst" src="img/edicaoesp/ous/ous7.jpg"> 
-            <img id="imgtst"src="img/edicaoesp/ous/ous8.webp"> 
-            <img id="imgtst"src="img/edicaoesp/ous/ous9.avif">-->
-        </div>
-    </section>
-    <div class="barra_">
-        <div id="linha_">
-            <div class="line_"></div>
-           
-        </div>
-    </div>
-    <div class="camisetas">
-        <div id="linhas_">
-            <p class="fonte">Moletons</p>
-            <div class="lines_"></div>
-        </div>
-    </div>
-    <section class="sectionGreen">
-        <div class="blusas">
-            <img id="imgtst" src="img/edições especiais/moletom/m1.jpeg"> <img id="imgtst"
-                src="img/edições especiais/moletom/m8.jpeg"> <img id="imgtst" src="img/edições especiais/moletom/m9.jpeg"> <img
-                id="imgtst" src="img/edições especiais/moletom/m3.jpeg"> <img id="imgtst"
-                src="img/edições especiais/moletom/m4.jpeg"> <img id="imgtst" src="img/edições especiais/moletom/m5.jpeg"> <img
-                id="imgtst" src="img/edições especiais/moletom/m6.jpeg"> <img id="imgtst"
-                src="img/edições especiais/moletom/m7.jpeg"> <img id="imgtst"
-                src="img/edições especiais/moletom/m2.jpeg">
-        </div>
-    </section>
-     <!-- Início do Rodapé -->
-     <div class="footer-clean">
+    <!-- Início do Rodapé -->
+    <div class="footer-clean">
         <footer>
             <div class="container">
                 <div class="row justify-content-center">
@@ -125,7 +175,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/homep.js" async></script>
     <script src="js/main.js"></script>
 </body>
 
