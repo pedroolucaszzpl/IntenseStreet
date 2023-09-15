@@ -233,7 +233,10 @@ p.desc{
     color: #fff;
     font-size: 16px;
     font-family: "Bauhaus";
+    white-space: wrap;
+    max-width: 300px;
 }
+
 p.price{
     color: #fff;
     font-size: 32px;

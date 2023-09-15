@@ -71,25 +71,25 @@
             <div class="clothes">
                 <div class="shirt">
                     <img src="img/vestuario/L1.jpeg" alt="">
-                    <p class="desc">CONJUNTO FEMININO CROPPED+SHORT+ACESSÓRIOS</p>
+                    <p class="desc">CONJUNTO FEMININO CROPPED + SHORT + ACESSÓRIOS</p>
                     <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
                     <p class="price">R$209,90</p>
                 </div>
                 <div class="sweater">
                     <img src="img/vestuario/L2.jpg" alt="">
-                    <p class="desc">CONJUNTO FEMININO MOLETOM+SHORT+ACESSÓRIOS</p>
+                    <p class="desc">CONJUNTO FEMININO MOLETOM + SHORT + ACESSÓRIOS</p>
                     <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
                     <p class="price">R$229.90</p>
                 </div>
                 <div class="shirt">
                     <img src="img/vestuario/L3.jpg" alt="">
-                    <p class="desc">CONJUNTO FEMININO BLUSÃO+SHORT+ACESSÓRIOS</p>
+                    <p class="desc">CONJUNTO FEMININO BLUSÃO + SHORT + ACESSÓRIOS</p>
                     <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
                     <p class="price">R$319,90</p>
                 </div>
                 <div class="sweater">
                     <img src="img/vestuario/L4.jpg" alt="">
-                    <p class="desc">CONJUNTO FEMININO BLUSÃO+SHORT+ACESSÓRIOS</p>
+                    <p class="desc">CONJUNTO FEMININO BLUSÃO + SHORT + ACESSÓRIOS</p>
                     <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
                     <p class="price">R$304,90</p>
                 </div>
