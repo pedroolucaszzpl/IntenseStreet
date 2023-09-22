@@ -71,47 +71,47 @@
                     <div class="line"></div>
                 </div>
             </div>
-                <div class="sePurple"></div>
-                <div class="calcous">
-                    <img src="img/edicaoesp/ous/ous.png" alt="">
-                    <p>Calçados</p>
-                    <div class="linep"></div>
-                </div>
-                <div class="ous">
-                <div class="tenisous">
-                    <img src="img/edicaoesp/ous/ous1.jpg" alt="">
-                    <p class="name">TÊNIS OUS IMIGRANTE PRETO AMARELO HOLOGRÁFICO ESSENCIAL</p>
-                    <p class="price">R$369,90</p>
-                </div>
-                <div class="tenisous">
-                    <img src="img/edicaoesp/ous/ous2.webp" alt="">
-                    <p class="name">TÊNIS OUS IMIGRANTE 2 OE- Masculino</p>
-                    <p class="price">R$369,90</p>
-                </div>
-                <div class="tenisous">
-                    <img src="img/edicaoesp/ous/ous7.jpg" alt=""> <!--MUDAR-->
-                    <p class="name">TÊNIS OUS IMIGRANTE PRETO FURTA COR</p>
-                    <p class="price">R$399,99</p>
-                </div>
-                <div class="tenisous">
-                    <img src="img/edicaoesp/ous/ous9.avif" alt="">
-                    <p class="name">TÊNIS OUS IMIGRANTE CREME UV ESSENIAL</p>
-                    <p class="price">R$429,90</p>
-                </div>
-                <div class="tenisous">
-                    <img src="img/edicaoesp/ous/ous11.png" alt="">
-                    <p class="name">TÊNIS BETS X ANGELI "BOB CUSP MATERIAL" IMPERIAL</p>
-                    <p class="price">R$589,90</p>
-                </div>
+            <div class="sePurple"></div>
+            <div class="calcous">
+                <img src="img/edicaoesp/ous/ous.png" alt="">
+                <p>Calçados</p>
+                <div class="linep"></div>
+            </div>
+            <div class="ous">
+                <?php
+                session_start();
+                include 'conexao.php';
+                // Faça a consulta SQL
+                $sql = "SELECT * FROM tenis_intense";
+                $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
+                
+                // Verifique se a consulta foi bem-sucedida
+                if ($resultado) {
+                    if ($resultado->num_rows > 0) {
+                        while ($row = $resultado->fetch_assoc()) {
+                            echo '<div class="tenisous">';
+                            echo "<img src='" . $row["tenis_img"] . "'>";
+                            echo "<p class='name'>" . $row["tenis_modelo"] . "</p>";
+                            echo "<p class='price'>R$" . $row["tenis_preco"] . "</p>";
+                            echo "</div>";
+                        }
+                    } else {
+                        echo "Nenhum resultado encontrado.";
+                    }
+                } else {
+                    die("Erro na consulta: " . $mysqli->error);
+                }
+               
+                ?>
             </div>
             <div class="space">
-                 <div class="line"></div>
+                <div class="line"></div>
             </div>
             <div class="secGreen"></div>
             <div class="camibaw">
-                    <img src="img/edicaoesp/baw/baw.png" alt="">
-                    <p>Camisetas</p>
-                    <div class="linep"></div>
+                <img src="img/edicaoesp/baw/baw.png" alt="">
+                <p>Camisetas</p>
+                <div class="linep"></div>
             </div>
             <div class="baw">
                 <div class="camisabaw">
