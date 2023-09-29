@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "bd_intensestreet");
+$conn = new mysqli("localhost", "root", "", "db_intensestreet");
 
 if ($conn->connect_error) {
     die("erro na conexão: " . $conn->connect_error);

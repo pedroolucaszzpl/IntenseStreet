@@ -82,7 +82,7 @@
                 session_start();
                 include 'conexao.php';
                 // Faça a consulta SQL
-                $sql = "SELECT * FROM tenis_intense";
+                $sql = "SELECT * FROM tenis WHERE tenis_cat = 'especial'";
                 $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
                 
                 // Verifique se a consulta foi bem-sucedida
@@ -95,6 +95,7 @@
                             echo "<p class='price'>R$" . $row["tenis_preco"] . "</p>";
                             echo "</div>";
                         }
+
                     } else {
                         echo "Nenhum resultado encontrado.";
                     }
@@ -114,30 +115,32 @@
                 <div class="linep"></div>
             </div>
             <div class="baw">
-                <div class="camisabaw">
-                    <img src="img/edicaoesp/baw/camiseta4.jpg" alt="">
-                    <p class="name">CAMISETA SELFIE LOGO PRETA</p>
-                    <p class="price">R$139,90</p>
-                </div>
-                <div class="camisabaw">
-                    <img src="img/edicaoesp/baw/camiseta5.jpg" alt="">
-                    <p class="name">CAMISETA MC REGULAR RIDING 4 FUN</p>
-                    <p class="price">R$149,90</p>
-                </div>
-                <div class="camisabaw">
-                    <img src="img/edicaoesp/baw/camiseta7.jpg" alt="">
-                    <p class="name">CAMISETA MC REGULAR CHILL</p>
-                    <p class="price">R$129,00</p>
-                </div>
-                <div class="camisabaw">
-                    <img src="img/edicaoesp/baw/camiseta6.jpg" alt="">
-                    <p class="name">CAMISETA MC REGULAR MELTING</p>
-                    <p class="price">R$149,90</p>
-                </div>
-                <div class="camisabaw">
-                    <img src="img/edicaoesp/baw/camiseta9.jpg" alt="">
-                    <p class="name">CAMISETA MC SKATE PENCIL</p>
-                    <p class="price">R$149,90</p>
+                <?php
+              //session_start();
+                include 'conexao.php';
+                // Faça a consulta SQL
+                $sql = "SELECT * FROM camisetas WHERE camiseta_cat = 'especial'";
+                $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
+                
+                // Verifique se a consulta foi bem-sucedida
+                if ($resultado) {
+                    if ($resultado->num_rows > 0) {
+                        while ($row = $resultado->fetch_assoc()) {
+                            echo '<div class="camisabaw">';
+                            echo "<img src='" . $row["camiseta_img"] . "'>";
+                            echo "<p class='name'>" . $row["camiseta_modelo"] . "</p>";
+                            echo "<p class='price'>R$" . $row["camiseta_preco"] . "</p>";
+                            echo "</div>";
+                        }
+
+                    } else {
+                        echo "Nenhum resultado encontrado.";
+                    }
+                } else {
+                    die("Erro na consulta: " . $mysqli->error);
+                }
+               
+                ?>
                 </div>
             </div>
         </div>

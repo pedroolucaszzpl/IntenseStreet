@@ -1,6 +1,6 @@
 <?php
 $hostname = "localhost";
-$bancodedados = "bd_intensestreet";
+$bancodedados = "db_intensestreet";
 $usuario = "root";
 $senha = "";
 
