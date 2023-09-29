@@ -69,30 +69,32 @@
                 </div>
             </div>
             <div class="clothes">
-                <div class="shirt">
-                    <img src="img/vestuario/L1.jpeg" alt="">
-                    <p class="desc">CONJUNTO FEMININO CROPPED + SHORT + ACESSÓRIOS</p>
-                    <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
-                    <p class="price">R$209,90</p>
-                </div>
-                <div class="sweater">
-                    <img src="img/vestuario/L2.jpg" alt="">
-                    <p class="desc">CONJUNTO FEMININO MOLETOM + SHORT + ACESSÓRIOS</p>
-                    <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
-                    <p class="price">R$229.90</p>
-                </div>
-                <div class="shirt">
-                    <img src="img/vestuario/L3.jpg" alt="">
-                    <p class="desc">CONJUNTO FEMININO BLUSÃO + SHORT + ACESSÓRIOS</p>
-                    <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
-                    <p class="price">R$319,90</p>
-                </div>
-                <div class="sweater">
-                    <img src="img/vestuario/L4.jpg" alt="">
-                    <p class="desc">CONJUNTO FEMININO BLUSÃO + SHORT + ACESSÓRIOS</p>
-                    <p class="desc">CONSULTAR CORES DISPONÍVEIS</p>
-                    <p class="price">R$304,90</p>
-                </div>
+            <?php
+                session_start();
+                include 'conexao.php';
+                // Faça a consulta SQL
+                $sql = "SELECT * FROM vestuario WHERE vestuario_cat = 'normal'";
+                $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
+                
+                // Verifique se a consulta foi bem-sucedida
+                if ($resultado) {
+                    if ($resultado->num_rows > 0) {
+                        while ($row = $resultado->fetch_assoc()) {
+                            echo '<div class="shirt">';
+                            echo "<img src='" . $row["vestuario_img"] . "'>";
+                            echo "<p class='desc'>" . $row["vestuario_modelo"] . "</p>";
+                            echo "<p class='price'>R$" . $row["vestuario_preco"] . "</p>";
+                            echo "</div>";
+                        }
+
+                    } else {
+                        echo "Nenhum resultado encontrado.";
+                    }
+                } else {
+                    die("Erro na consulta: " . $mysqli->error);
+                }
+               
+                ?>
             </div>
         </div>
         <div class="model">
@@ -104,12 +106,31 @@
                 </div>
             </div>
             <div class="clothes">
-                <div class="shirt">
-                    <img src="img/modelos/bone.jpg" alt="">
-                    <p class="desc">BONÉ NIKE</p>
-                    <p class="desc">COR-BRANCO</p>
-                    <p class="price">R$99,90</p>
-                </div>
+            <?php
+                include 'conexao.php';
+                // Faça a consulta SQL
+                $sql = "SELECT * FROM acessorios WHERE acessorio_cat = 'normal'";
+                $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
+                
+                // Verifique se a consulta foi bem-sucedida
+                if ($resultado) {
+                    if ($resultado->num_rows > 0) {
+                        while ($row = $resultado->fetch_assoc()) {
+                            echo '<div class="sweater">';
+                            echo "<img src='" . $row["acessorio_img"] . "'>";
+                            echo "<p class='desc'>" . $row["acessorio_modelo"] . "</p>";
+                            echo "<p class='price'>R$" . $row["acessorio_preco"] . "</p>";
+                            echo "</div>";
+                        }
+
+                    } else {
+                        echo "Nenhum resultado encontrado.";
+                    }
+                } else {
+                    die("Erro na consulta: " . $mysqli->error);
+                }
+               
+                ?>
                 <div class="sweater">
                     <img src="img/modelos/corrente.jpg" alt="">
                     <p class="desc">COLAR JORDAN</p>
