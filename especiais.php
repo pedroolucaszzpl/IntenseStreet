@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!--Google Link Icon-->
-    <link rel="stylesheet" href="./css/especiais.css">
+    <link rel="stylesheet" href="css/especiais.css">
     <title>IntenseStreet Páginas Especial</title>
 </head>
 
@@ -89,8 +89,8 @@
                 if ($resultado) {
                     if ($resultado->num_rows > 0) {
                         while ($row = $resultado->fetch_assoc()) {
-                            echo "<div class='all'>";
-                            echo '<div class="tenisous">';
+                            echo "<div class= 'all'>";
+                            echo "<div class= 'tenisous'>";
                             echo "<img src='" . $row["tenis_img"] . "'>";
                             echo "<p class='name'>" . $row["tenis_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["tenis_preco"] . "</p>";
@@ -134,16 +134,19 @@
                 if ($resultado) {
                     if ($resultado->num_rows > 0) {
                         while ($row = $resultado->fetch_assoc()) {
+                            echo "<div class='all'>";
                             echo '<div class="camisabaw">';
                             echo "<img src='" . $row["camiseta_img"] . "'>";
                             echo "<p class='name'>" . $row["camiseta_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["camiseta_preco"] . "</p>";
+                            echo "</div>";
                             echo "<div='exclude'>";
                             echo "<form method='POST' action='excluir/excluir_camisa.php'>";
                             echo "<input type='hidden' name='tenis_id' value='" . $row['camiseta_id'] . "'>";
                             echo "<button class='excluir_btn' data-item-id=" . $row['camiseta_id'] . ">Excluir</button>";
                             echo "</form>";
                             echo "<button class='editar_btn' href='excluir.php' data-item-id=" . $row['camiseta_id'] . ">Editar</button>";
+                            echo "</div>";
                             echo "</div>";
                         }
 

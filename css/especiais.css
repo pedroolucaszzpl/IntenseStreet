@@ -233,7 +233,7 @@ div#linhas {
     background-color: #9400D3;
     width: 100%;
     padding-top: 10px;
-    height: 350px;
+    height: 360px;
     display: flex;
     justify-content: space-around;
 }
@@ -242,6 +242,9 @@ div#linhas {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.all button{
+    margin-top: 5px;
 }
 .calcous {
     background-color: #211B15;
