@@ -43,7 +43,7 @@ body {
     display: none;
 }
 
-menu{
+menu {
     display: none;
 }
 
@@ -74,7 +74,8 @@ aside {
     align-items: center;
     justify-content: center;
 }
-.navbar-menu ul{
+
+.navbar-menu ul {
     align-items: center;
 }
 
@@ -140,7 +141,7 @@ aside {
 }
 
 #lupa {
-    width: 30px;
+    width: 6%;
     padding-right: 20px;
 }
 
@@ -152,7 +153,7 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 530px;
+    width: 430px;
     height: 20px;
 }
 
@@ -171,93 +172,26 @@ aside {
     padding-left: 5px;
 }
 
-.logarConta{
+.logarConta {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70px;
     height: 40px;
 }
-.logarConta a{
+
+.logarConta a {
     text-decoration: none;
     color: #fff;
     font-family: "Gotham";
 }
-.logarConta:hover{
+
+.logarConta:hover {
     background-color: var(--InGreen);
     border-radius: 3px;
 }
-@media screen and (min-width: 370px) and (max-width:750px) {
-    #menu_vertical {
-        display: block;
-    }
-    #icon {
-        padding-left: 8px;
-    }
 
-    .navbar {
-        align-items: left;
-    }
-
-    .navbar-logo {
-        width: 65px;
-        align-items: left;
-        margin: 8px;
-    }
-
-    .search {
-        width: 230px;
-    }
-
-    .contentHead {
-        display: none;
-    }
-
-    #carrinho {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 751px) and (max-width:1000px) {
-    #menu_vertical {
-        display: block;
-    }
-    #icon {
-        padding-left: 8px;
-    }
-
-    .navbar {
-        align-items: left;
-    }
-
-    .navbar-logo {
-        width: 65px;
-        align-items: left;
-        margin: 8px;
-    }
-
-    .search {
-        width: 200px;
-    }
-
-    .ask{
-        width: 250px;
-    }
-    .contentHead {
-        display: none;
-    }
-
-    #carrinho {
-        display: none;
-    }
-}
 /*main*/
-.space{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .barra {
     width: 100%;
     height: 35px;
@@ -275,7 +209,8 @@ div#linhas {
     background: var(--black);
     margin: 15px;
 }
-.linep{
+
+.linep {
     width: 80%;
     height: 2px;
     background-color: #fff;
@@ -288,20 +223,27 @@ div#linhas {
     font-weight: 700;
 }
 
-.sePurple{
+.sePurple {
     width: 100%;
     height: 10px;
     background-color: #9400D3;
 }
-.ous{
+
+.ous {
     background-color: #9400D3;
     width: 100%;
     padding-top: 10px;
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: space-around;
 }
-.calcous{
+
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calcous {
     background-color: #211B15;
     width: 100%;
     height: 40px;
@@ -309,49 +251,54 @@ div#linhas {
     justify-content: center;
     padding-top: 5px;
 }
-.calcous p{
+
+.calcous p {
     color: #fff;
     font-family: "Bauhaus";
     font-size: 20px;
     text-decoration: underline;
     padding: 0 15px 0 15px;
 }
-.calcous img{
+
+.calcous img {
     width: 30px;
 }
-.tenisous{
-    margin-top:20px;
-    margin-left: 40px;
-    margin-right: 40px;
+
+.tenisous {
+    margin: 20px 30px 0;
     background-color: #fff;
     height: 250px;
-    width: 200px;
+    width:150px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.tenisous img{
+
+.tenisous img {
     width: 150px;
     height: 150px;
 }
-p.name{
+
+p.name {
     font-family: "Bauhaus";
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 5px;
     font-weight: bold;
 }
-p.price{
+
+p.price {
     font-family: "Bauhaus";
-    font-size:22px;
+    font-size: 22px;
     font-weight: bold;
 }
 
-.secGreen{
+.secGreen {
     width: 100%;
     height: 10px;
     background-color: #00FF00;
 }
-.camibaw{
+
+.camibaw {
     background-color: #211B15;
     width: 100%;
     height: 40px;
@@ -359,11 +306,12 @@ p.price{
     justify-content: center;
     padding-top: 5px;
 }
-.camibaw img{
+
+.camibaw img {
     width: 50px;
 }
 
-.camibaw p{
+.camibaw p {
     color: #fff;
     font-family: "Bauhaus";
     font-size: 20px;
@@ -371,38 +319,56 @@ p.price{
     padding: 0 15px 0 15px;
 }
 
-.baw{
+.baw {
     background-color: #00FF00;
     width: 100%;
     padding-top: 10px;
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: space-around;
 }
 
-.camisabaw{
-    margin-top:20px;
-    margin-left: 40px;
-    margin-right: 40px;
+.camisabaw {
+    margin: 20px 30px 0;
     background-color: #fff;
     height: 250px;
-    width: 200px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.camisabaw img{
-    width: 150px;
+.camisabaw img {
+    /*width: 150px;*/
     height: 150px;
 }
+
+.excluir_btn {
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.editar_btn {
+    margin-top: 5px;
+    background-color: rgb(126, 126, 235);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
 /*footer css*/
 
 .footer-clean {
     padding: 30px 0;
     background-color: var(--InPurple);
-    color: var(--white); 
-    bottom: 0; 
+    color: var(--white);
+    bottom: 0;
     width: 100%;
 }
 
@@ -489,21 +455,26 @@ p.price{
 
 
 @media screen and (max-width:750px) {
-    .line{
+    .line {
         width: 20%;
     }
-    p.pag{
+
+    p.pag {
         font-size: 16px;
     }
-    .baw{
+
+    .baw {
         display: inline-table;
     }
-    .ous{
+
+    .ous {
         display: inline-table;
     }
+
     #menu_vertical {
         display: block;
     }
+
     #icon {
         padding-left: 8px;
     }
@@ -533,28 +504,32 @@ p.price{
 }
 
 @media screen and (min-width: 751px) and (max-width:1000px) {
-    .line{
+    .line {
         width: 35%;
     }
-    p.pag{
+
+    p.pag {
         font-size: 16px;
     }
-    .baw{
+
+    .baw {
         height: 900px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3%;
     }
-    
-    .ous{
+
+    .ous {
         height: 900px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 3%;
     }
+
     #menu_vertical {
         display: block;
     }
+
     #icon {
         padding-left: 8px;
     }
@@ -573,9 +548,10 @@ p.price{
         width: 200px;
     }
 
-    .ask{
+    .ask {
         width: 250px;
     }
+
     .contentHead {
         display: none;
     }

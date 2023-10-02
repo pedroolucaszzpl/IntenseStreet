@@ -82,17 +82,28 @@
                 session_start();
                 include 'conexao.php';
                 // Faça a consulta SQL
-                $sql = "SELECT * FROM tenis WHERE tenis_cat = 'especial'";
+                $sql = "SELECT * FROM tenis WHERE tenis_cat = 'especial' LIMIT 5";
                 $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
                 
                 // Verifique se a consulta foi bem-sucedida
                 if ($resultado) {
                     if ($resultado->num_rows > 0) {
                         while ($row = $resultado->fetch_assoc()) {
+                            echo "<div class='all'>";
                             echo '<div class="tenisous">';
                             echo "<img src='" . $row["tenis_img"] . "'>";
                             echo "<p class='name'>" . $row["tenis_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["tenis_preco"] . "</p>";
+                            echo "</div>";
+                            echo "<div class='exclude'>";
+                            echo "<form method='POST' action='excluir/excluir_calc.php'>";
+                            echo "<input type='hidden' name='tenis_id' value='" . $row['tenis_id'] . "'>";
+                            echo "<button class='excluir_btn' type='submit' data-item-id=" . $row['tenis_id'] . ">Excluir</button>";
+                            echo "</form>";
+                            echo "<form method='GET' action='editar_calc.php'>";
+                            echo "<button class='editar_btn' href='excluir.php' data-item-id=" . $row['tenis_id'] . ">Editar</button>";
+                            echo "</form>";
+                            echo "</div>";
                             echo "</div>";
                         }
 
@@ -105,9 +116,6 @@
                
                 ?>
             </div>
-            <div class="space">
-                <div class="line"></div>
-            </div>
             <div class="secGreen"></div>
             <div class="camibaw">
                 <img src="img/edicaoesp/baw/baw.png" alt="">
@@ -119,7 +127,7 @@
               //session_start();
                 include 'conexao.php';
                 // Faça a consulta SQL
-                $sql = "SELECT * FROM camisetas WHERE camiseta_cat = 'especial'";
+                $sql = "SELECT * FROM camisetas WHERE camiseta_cat = 'especial' LIMIT 5";
                 $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
                 
                 // Verifique se a consulta foi bem-sucedida
@@ -130,6 +138,12 @@
                             echo "<img src='" . $row["camiseta_img"] . "'>";
                             echo "<p class='name'>" . $row["camiseta_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["camiseta_preco"] . "</p>";
+                            echo "<div='exclude'>";
+                            echo "<form method='POST' action='excluir/excluir_camisa.php'>";
+                            echo "<input type='hidden' name='tenis_id' value='" . $row['camiseta_id'] . "'>";
+                            echo "<button class='excluir_btn' data-item-id=" . $row['camiseta_id'] . ">Excluir</button>";
+                            echo "</form>";
+                            echo "<button class='editar_btn' href='excluir.php' data-item-id=" . $row['camiseta_id'] . ">Editar</button>";
                             echo "</div>";
                         }
 
