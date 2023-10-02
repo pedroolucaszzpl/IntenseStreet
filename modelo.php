@@ -132,22 +132,22 @@
                
                 ?>
                 <div class="sweater">
-                    <img src="img/modelos/corrente.jpg" alt="">
+                    <!--<img src="img/modelos/corrente.jpg" alt="">
                     <p class="desc">COLAR JORDAN</p>
                     <p class="desc">COR-PRATA/DOURADO</p>
-                    <p class="price">R$109,90</p>
+                    <p class="price">R$109,90</p>-->
                 </div>
                 <div class="shirt">
-                    <img src="img/modelos/chapéu.jpg" alt="">
-                    <p class="desc">CHAPÉU BUCKET NIKE</p>
+                    <!-- <img src="img/modelos/chapéu.jpg" alt="">
+                   <p class="desc">CHAPÉU BUCKET NIKE</p>
                     <p class="desc">COR-PRETO</p>
-                    <p class="price">R$114,90</p>
+                    <p class="price">R$114,90</p>-->
                 </div>
                 <div class="sweater">
-                    <img src="img/modelos/bolsa.jpg" alt="">
+                    <!--<img src="img/modelos/bolsa.jpg" alt="">
                     <p class="desc">BOLSA TOMMY HILFIGER</p>
                     <p class="desc">COR-PRETO</p>
-                    <p class="price">R$229,90</p>
+                    <p class="price">R$229,90</p>-->
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@
                 </div>
             </div>
         </div>
-        
+        <a href='update1.php?vestuario_id=" . $row["vestuario_id"] . "'>Editar</a>
     </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">
