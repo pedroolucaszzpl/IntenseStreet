@@ -233,7 +233,7 @@ div#linhas {
     background-color: #9400D3;
     width: 100%;
     padding-top: 10px;
-    height: 360px;
+    height: 370px;
     display: flex;
     justify-content: space-around;
 }
@@ -268,16 +268,19 @@ div#linhas {
 }
 
 .tenisous {
-    margin: 20px 30px 0;
+    border: solid 3px #211B15;
+    border-radius: 10px;
+    margin: 20px 20px 0;
     background-color: #fff;
-    height: 250px;
-    width:150px;
+    height: 260px;
+    width:160px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .tenisous img {
+    padding-top: 3px;
     width: 150px;
     height: 150px;
 }
@@ -326,23 +329,25 @@ p.price {
     background-color: #00FF00;
     width: 100%;
     padding-top: 10px;
-    height: 350px;
+    height: 370px;
     display: flex;
     justify-content: space-around;
 }
 
 .camisabaw {
-    margin: 20px 30px 0;
+    margin: 20px 20px 0;
+    border: solid 3px #211B15;
+    border-radius: 10px;
     background-color: #fff;
     height: 250px;
-    width: 150px;
+    width: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .camisabaw img {
-    /*width: 150px;*/
+    padding-top: 3px;
     height: 150px;
 }
 
@@ -365,6 +370,9 @@ p.price {
     cursor: pointer;
 }
 
+.exclude{
+    display: contents;
+}
 /*footer css*/
 
 .footer-clean {

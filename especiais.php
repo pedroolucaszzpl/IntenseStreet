@@ -57,7 +57,7 @@
             <div class="logarConta">
                 <a href="index.php">Logar</a>
             </div>
-            <a class="navbar-logo" href="main.php">
+            <a class="navbar-logo" href="index.php">
                 <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
             </a>
         </nav>
@@ -140,7 +140,7 @@
                             echo "<p class='name'>" . $row["camiseta_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["camiseta_preco"] . "</p>";
                             echo "</div>";
-                            echo "<div='exclude'>";
+                            echo "<div class='exclude'>";
                             echo "<form method='POST' action='excluir/excluir_camisa.php'>";
                             echo "<input type='hidden' name='tenis_id' value='" . $row['camiseta_id'] . "'>";
                             echo "<button class='excluir_btn' data-item-id=" . $row['camiseta_id'] . ">Excluir</button>";
