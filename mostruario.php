@@ -53,9 +53,6 @@
             <div class="buy">
                 <img id="carrinho" src="img/carrinho.png" alt="">
             </div>
-            <div class="logarConta">
-                <a href="index.php">Logar</a>
-            </div>
             <a class="navbar-logo" href="main.php">
                 <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
             </a>

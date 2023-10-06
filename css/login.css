@@ -86,7 +86,7 @@ input#nome_login:focus {
 }
 
 input#botao_login {
-   background-color: var(--Green);
+   background-color: var(--InGreen);
    color:  #ffff;
    padding: 10px;
    border: none;
@@ -97,7 +97,7 @@ input#botao_login {
    margin: 10px;
 }
 input#botao_login:hover{
-   background-color: var(--InGreen);
+   background-color: var(--Green);
 }
 
 a {
@@ -161,7 +161,7 @@ label{
 .content {
    background-color: #211B15;
    opacity: 90% ;
-   margin-top: 5%;
+   margin-top: 1%;
    border-radius: 20px;
    border: solid 3px #8B53FF;
    display: flex;

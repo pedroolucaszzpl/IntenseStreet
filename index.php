@@ -26,7 +26,7 @@
                                 <option value="calcados">Calçados</option>
                                 <option value="acessorios">Acessórios</option>
                                 <option value="vestuario">Vestuário</option>
-                               <option value="especial">Edições Especiais</option>
+                                <option value="especial">Edições Especiais</option>
 
                             </select>
                         </li>
@@ -55,7 +55,7 @@
                 <img id="carrinho" src="img/carrinho.png" alt="">
             </div>
             <div class="logarConta">
-                <a href="index.php">Logar</a>
+                <a href="logar.php">Logar</a>
             </div>
             <a class="navbar-logo" href="index.php">
                 <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
@@ -100,19 +100,24 @@
             </div>
             <div class="brandimg">
                 <div class="b1">
-                    <div class="brand br1"><a href="https://www.adidas.com.br/"><img class="gren" src="img/homepage/adidas (1).png" alt=""></a></div>
+                    <div class="brand br1"><a href="https://www.adidas.com.br/"><img class="gren"
+                                src="img/homepage/adidas (1).png" alt=""></a></div>
                     <p>Adidas</p>
                 </div>
                 <div class="b1">
-                    <div class="brand br2"><a href="https://www.ous.com.br/"><img class="purpl" src="img/homepage/ous.png" alt=""></a></div>
+                    <div class="brand br2"><a href="https://www.ous.com.br/"><img class="purpl"
+                                src="img/homepage/ous.png" alt=""></a></div>
                     <p>OUS</p>
                 </div>
                 <div class="b1">
-                    <div class="brand br3"><a href="https://www.bawclothing.com.br/baw/acessorios?order=OrderByReleaseDateDESC"><img class="gren" src="img/homepage/baw.png" alt=""></a></div>
+                    <div class="brand br3"><a
+                            href="https://www.bawclothing.com.br/baw/acessorios?order=OrderByReleaseDateDESC"><img
+                                class="gren" src="img/homepage/baw.png" alt=""></a></div>
                     <p>BAW</p>
                 </div>
                 <div class="b1">
-                    <div class="brand br4"><a href="https://www.nike.com.br/"><img class="purpl" src="img/homepage/nike.png" alt=""></a></div>
+                    <div class="brand br4"><a href="https://www.nike.com.br/"><img class="purpl"
+                                src="img/homepage/nike.png" alt=""></a></div>
                     <p>Nike</p>
                 </div>
 
