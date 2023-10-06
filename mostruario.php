@@ -53,9 +53,6 @@
             <div class="buy">
                 <img id="carrinho" src="img/carrinho.png" alt="">
             </div>
-            <div class="logarConta">
-                <a href="index.php">Logar</a>
-            </div>
             <a class="navbar-logo" href="main.php">
                 <img src="img/logo1.png" alt="Logo IntenseStreet" description="Logo IntenseStreet" id="logo1">
             </a>
@@ -69,7 +66,7 @@
                 <div class="line"></div>
             </div>
         </div>
-        <div class="modeloc">
+        <div class="desc_produto">
                 <div class="fotos">
                     <img class="img1" src="https://dillysports.vtexassets.com/arquivos/ids/169916-800-auto?v=637980880943170000&width=800&height=auto&aspect=true" alt="foto1">
                     <img class="img1" src="https://dillysports.vtexassets.com/arquivos/ids/169925-800-auto?v=637980881569270000&width=800&height=auto&aspect=true" alt="foto2">
@@ -78,37 +75,45 @@
                     <img class="img2" src="https://dillysports.vtexassets.com/arquivos/ids/171847-800-auto?v=637994471601300000&width=800&height=auto&aspect=true" alt="foto4">
                 </div>
         <div class="descricao">
-            <label for="cor">Cor:</label>
-            <select id="cor">
-                <option value="preto">Preto</option>
-                <option value="branco">Branco</option>
-                <option value="preto e azul">Preto e Azul</option>
-                <option value="preto e roxo">Preto e Roxo</option>
-                <option value="preto e amarelo">Preto e Amarelo</option>
-                <option value="branco e azul">Branco e Azul</option>
-                <option value="branco e rosa">Branco e Rosa</option>
-                <option value="bege e marrom">Bege e Marrom</option>
-                <option value="cinza, preto e branco">Cinza,Preto e Branco</option>
-            </select>
-            <label for="tamanho">Tamanho:</label>
-            <select id="tamanho">
-                <option value="36">36</option>
-                <option value="37">37</option>
-                <option value="38">38</option>
-                <option value="39">39</option>
-                <option value="40">40</option>
-                <option value="41">41</option>
-                <option value="42">42</option>
-                <option value="43">43</option>
-                <option value="44">44</option>
-            </select>
+            <div class="cor">
+                <label for="cor">Cor:</label>
+                <select id="cor">
+                    <option value="preto">Preto</option>
+                    <option value="branco">Branco</option>
+                    <option value="preto e azul">Preto e Azul</option>
+                    <option value="preto e roxo">Preto e Roxo</option>
+                    <option value="preto e amarelo">Preto e Amarelo</option>
+                    <option value="branco e azul">Branco e Azul</option>
+                    <option value="branco e rosa">Branco e Rosa</option>
+                    <option value="bege e marrom">Bege e Marrom</option>
+                    <option value="cinza, preto e branco">Cinza,Preto e Branco</option>
+                </select>
+            </div>
+            <div class="tam">
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                </select>
+            </div>
+            <div class="valor">
             <h5>R$Valor do produto</h5>
-            <label for="pagamento">Forma de Pagamento:</label>
-            <select id="pagamento">
-                <option value="credito">Cartão de Crédito</option>
-                <option value="boleto">Boleto</option>
-                <option value="Pix">Pix</option>
-            </select>
+            </div>
+            <div class="pagamento">
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento">
+                    <option value="credito">Cartão de Crédito</option>
+                    <option value="boleto">Boleto</option>
+                    <option value="Pix">Pix</option>
+                </select>
+            </div>
             <div class="botoes-mostruario">
                 <button id="botao-add">COMPRAR AGORA</button>
                 <button id="botao-add">ADICIONAR AO CARRINHO</button>

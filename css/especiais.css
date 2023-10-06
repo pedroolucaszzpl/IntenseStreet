@@ -13,6 +13,7 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: content-box;
+    font-family: 'Bauhaus', serif !important;
 }
 
 body {
@@ -120,7 +121,6 @@ aside {
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    font-family: "Gotham";
 }
 
 .nav-link:hover {
@@ -132,7 +132,6 @@ aside {
     background-color: var(--black);
     font-size: 20px;
     color: var(--white);
-    font-family: "Gotham";
     padding-left: 20px;
 }
 
@@ -168,7 +167,6 @@ aside {
     width: 94%;
     height: 100%;
     font-size: 15px;
-    font-family: "Gotham";
     padding-left: 5px;
 }
 
@@ -183,7 +181,6 @@ aside {
 .logarConta a {
     text-decoration: none;
     color: #fff;
-    font-family: "Gotham";
 }
 
 .logarConta:hover {
@@ -219,7 +216,7 @@ div#linhas {
 
 .pag {
     font-size: 20px;
-    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
+    font-family: "Bauhaus";
     font-weight: 700;
 }
 
