@@ -26,10 +26,10 @@ include('conexao.php');
 } else {
     $pesquisa = $mysqli->real_escape_string($_GET['busca']);
     $sql_code = "SELECT *
-       FROM celulares 
-       WHERE marca_celulares LIKE '%$pesquisa%' 
-       OR preco_celulares LIKE '%$pesquisa%' 
-       OR nome_celulares LIKE '%$pesquisa%'";
+       FROM vestuario 
+       WHERE vestuario_marca LIKE '%$pesquisa%' 
+       OR vestuario_preco LIKE '%$pesquisa%' 
+       OR vestuario_modelo LIKE '%$pesquisa%'";
     $sql_query = $mysqli->query($sql_code) or die("ERRO ao consultar! " . $mysqli->error); 
     
     if($sql_query->num_rows == 0) {
