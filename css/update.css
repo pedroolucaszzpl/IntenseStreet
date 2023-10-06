@@ -1,0 +1,17 @@
+:root {
+    --InPurple: #9400D3;
+    --LightPurple: #8B53FF;
+    --InGreen: #00FF00;
+    --Green: #04D004;
+    --LightGreen: #99FFAB;
+    --black: #211B15;
+    --white: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: content-box;
+}
+
