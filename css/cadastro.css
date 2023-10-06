@@ -9,10 +9,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #211B15;
-  padding: 0;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #211B15;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .container {
@@ -72,7 +75,7 @@ input#email {
 input#botao_login {
   padding: 10px;
   margin-top: 10px;
-  background-color: var(--Green);
+  background-color: var(--InGreen);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -82,6 +85,9 @@ input#botao_login {
   margin: 10px;
 }
 
+input#botao_login:hover{
+  background-color: var(--Green);
+}
 
 img {
   padding: 10px 0;
@@ -120,10 +126,16 @@ label {
 }
 
 .content {
+  background-color: #211B15;
+  opacity: 90% ;
+  margin-top: 1%;
+  border-radius: 20px;
+  border: solid 3px #8B53FF;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 400px;
 }
 
 #linhas {

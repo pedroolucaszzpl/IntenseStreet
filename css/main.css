@@ -114,7 +114,6 @@ menu {
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    font-family: "Gotham";
 }
 
 .nav-link:hover {
@@ -126,7 +125,6 @@ menu {
     background-color: var(--black);
     font-size: 20px;
     color: var(--white);
-    font-family: "Gotham";
     padding-left: 20px;
 }
 
@@ -162,7 +160,6 @@ menu {
     width: 94%;
     height: 100%;
     font-size: 15px;
-    font-family: "Gotham";
     padding-left: 5px;
 }
 
@@ -177,7 +174,6 @@ menu {
 .logarConta a{
     text-decoration: none;
     color: #fff;
-    font-family: "Gotham";
 }
 .logarConta:hover{
     background-color: var(--InGreen);
