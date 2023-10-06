@@ -221,9 +221,27 @@ div#linhas {
 }
 
 .sePurple {
+    display: flex;
     width: 100%;
-    height: 10px;
+    height: 35px;
     background-color: #9400D3;
+    justify-content: end;
+}
+
+.add {
+    border-radius: 5px;
+    background-color: #00FF00;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px 5px 0;
+
+
+}
+
+.add:hover {
+    background-color: #04D004;
 }
 
 .ous {
@@ -235,14 +253,16 @@ div#linhas {
     justify-content: space-around;
 }
 
-.all{
+.all {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.all button{
+
+.all button {
     margin-top: 5px;
 }
+
 .calcous {
     background-color: #211B15;
     width: 100%;
@@ -270,7 +290,7 @@ div#linhas {
     margin: 20px 20px 0;
     background-color: #fff;
     height: 260px;
-    width:160px;
+    width: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,9 +387,10 @@ p.price {
     cursor: pointer;
 }
 
-.exclude{
+.exclude {
     display: contents;
 }
+
 /*footer css*/
 
 .footer-clean {
@@ -568,4 +589,14 @@ p.price {
         display: none;
     }
 
+}
+
+.content_form{
+    background-color: #babab9;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

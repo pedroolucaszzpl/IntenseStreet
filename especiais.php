@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!--Google Link Icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="css/especiais.css">
     <title>IntenseStreet Páginas Especial</title>
 </head>
@@ -68,7 +70,11 @@
                     <div class="line"></div>
                 </div>
             </div>
-            <div class="sePurple"></div>
+            <div class="sePurple">
+                <form method="post" class="adicionar" action="./adicionar/add_tenisesp.php">
+                  <input type="submit" class="add" value="+"></input>
+                </form>
+            </div>
             <div class="calcous">
                 <img src="img/edicaoesp/ous/ous.png" alt="">
                 <p>Calçados</p>
@@ -110,7 +116,7 @@
                 } else {
                     die("Erro na consulta: " . $mysqli->error);
                 }
-               
+
                 ?>
             </div>
             <div class="secGreen"></div>
@@ -121,7 +127,7 @@
             </div>
             <div class="baw">
                 <?php
-              //session_start();
+                //session_start();
                 include 'conexao.php';
                 // Faça a consulta SQL
                 $sql = "SELECT * FROM camisetas WHERE camiseta_cat = 'especial' LIMIT 5";
@@ -153,10 +159,10 @@
                 } else {
                     die("Erro na consulta: " . $mysqli->error);
                 }
-               
+
                 ?>
-                </div>
             </div>
+        </div>
         </div>
     </main>
 
