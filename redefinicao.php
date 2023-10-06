@@ -15,17 +15,14 @@
             <img id="id-img" src="img/logo1.png">
         </div>
         <div class="login">
-        <form method="post" action="redefinicaojs.php">
+        <form method="post" action="redefinir.php">
             <div class="form">
-                <label for="nome_login" id="nome_label">Usuário</label> <br>
-                <input id="nome_login" name="nome_login" required="required" type="text"
-                    placeholder="Usuário de cadastro" />
-
+            <label for="funcionario_email">Usuário:</label>
+            <input type="email" id="nome_login" name="funcionario_email" required>
             </div>
             <div class="form">
-                <label for="novaSenha">Nova Senha:</label> <br>
-                <input id="senha_login" name="novaSenha" required="required" type="password"
-                    placeholder="Digite sua senha" />
+            <label for="funcionario_senha">Nova Senha:</label>
+            <input type="password" name="funcionario_senha" required>
 
             </div>
             <div id="linhas">
