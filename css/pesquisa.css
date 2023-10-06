@@ -19,9 +19,9 @@
 body {
     width: 100%;
     height: 100%;
+    background-color: var(--black);
 }
 
-/*cabeçalho*/
 #icon {
     color: #fff;
     cursor: pointer;
@@ -48,10 +48,6 @@ menu {
     display: none;
 }
 
-aside {
-    display: none;
-}
-
 @font-face {
     font-family: "Bauhaus";
     src: url(/Bauhaus\ Font\ Family/);
@@ -62,7 +58,6 @@ aside {
 }
 
 .navbar {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -140,7 +135,7 @@ aside {
 }
 
 #lupa {
-    width: 6%;
+    width: 30px;
     padding-right: 20px;
 }
 
@@ -152,7 +147,7 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 430px;
+    width: 530px;
     height: 20px;
 }
 
@@ -171,6 +166,7 @@ aside {
 }
 
 .logarConta {
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,207 +184,147 @@ aside {
     border-radius: 3px;
 }
 
-/*main*/
+.slidesec {
+    display: none;
+}
+
+.galery {
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 19.9%;
+    margin-right: 0;
+}
+
+@keyframes animacao {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    outline: revert;
+}
+
 .barra {
     width: 100%;
     height: 35px;
     background-color: rgb(255, 255, 255);
 }
 
-div#linhas {
+#linhas {
     display: flex;
     align-items: center;
 }
 
 .line {
-    width: 35%;
+    width: 50%;
     height: 2px;
     background: var(--black);
     margin: 15px;
 }
 
-.linep {
-    width: 80%;
-    height: 2px;
-    background-color: #fff;
-    margin: 15px;
-}
-
 .pag {
     font-size: 20px;
-    font-family: "Bauhaus";
+    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
     font-weight: 700;
 }
 
-.sePurple {
+.brandimg {
     display: flex;
-    width: 100%;
-    height: 35px;
-    background-color: #9400D3;
-    justify-content: end;
-}
-
-.add {
-    border-radius: 5px;
-    background-color: #00FF00;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    margin: 5px 10px 5px 0;
-
-
-}
-
-.add:hover {
-    background-color: #04D004;
-}
-
-.ous {
-    background-color: #9400D3;
-    width: 100%;
-    padding-top: 10px;
-    height: 370px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.all {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    padding: 2% 0;
 }
 
-.all button {
-    margin-top: 5px;
-}
-
-.calcous {
-    background-color: #211B15;
-    width: 100%;
-    height: 40px;
+.forms {
     display: flex;
-    justify-content: center;
-    padding-top: 5px;
 }
 
-.calcous p {
+.marcas {
+    background-color: var(--black);
+    height: 310px;
+}
+
+.brandimg img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid transparent;
+    /* Adicione uma borda transparente */
+    transition: border 0.3s;
+}
+
+.brand {
+    height: 200px;
+}
+
+.brandimg img.gren:hover {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #00FF00, #3cff3c, #85ff85) border-box;
+    border: 3px solid transparent;
+}
+
+.brandimg img.purpl:hover {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #9400D3, #9b1dd2, #a64ecc) border-box;
+    border: 3px solid transparent;
+}
+
+.b1 p {
+    padding-top: 2px;
+    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
     color: #fff;
-    font-family: "Bauhaus";
-    font-size: 20px;
-    text-decoration: underline;
-    padding: 0 15px 0 15px;
-}
-
-.calcous img {
-    width: 30px;
-}
-
-.tenisous {
-    border: solid 3px #211B15;
-    border-radius: 10px;
-    margin: 20px 20px 0;
-    background-color: #fff;
-    height: 260px;
-    width: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tenisous img {
-    padding-top: 3px;
-    width: 150px;
-    height: 150px;
-}
-
-p.name {
-    font-family: "Bauhaus";
-    font-size: 13px;
-    margin: 0 5px;
     font-weight: bold;
 }
 
-p.price {
-    font-family: "Bauhaus";
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.secGreen {
-    width: 100%;
-    height: 10px;
-    background-color: #00FF00;
-}
-
-.camibaw {
-    background-color: #211B15;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    padding-top: 5px;
-}
-
-.camibaw img {
-    width: 50px;
-}
-
-.camibaw p {
-    color: #fff;
-    font-family: "Bauhaus";
-    font-size: 20px;
-    text-decoration: underline;
-    padding: 0 15px 0 15px;
-}
-
-.baw {
-    background-color: #00FF00;
-    width: 100%;
-    padding-top: 10px;
-    height: 370px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.camisabaw {
-    margin: 20px 20px 0;
-    border: solid 3px #211B15;
-    border-radius: 10px;
-    background-color: #fff;
-    height: 250px;
-    width: 160px;
+.b1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.camisabaw img {
-    padding-top: 3px;
-    height: 150px;
-}
-
-.excluir_btn {
-    background-color: red;
-    border-radius: 5px;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.editar_btn {
-    margin-top: 5px;
-    background-color: rgb(126, 126, 235);
-    border-radius: 5px;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.exclude {
-    display: contents;
 }
 
 /*footer css*/
@@ -396,9 +332,7 @@ p.price {
 .footer-clean {
     padding: 30px 0;
     background-color: var(--InPurple);
-    color: var(--white);
-    bottom: 0;
-    width: 100%;
+    color: #fff;
 }
 
 .footer-clean h3 {
@@ -452,7 +386,7 @@ p.price {
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid var(--grey);
+    border: 1px solid #ccc;
     margin-left: 10px;
     margin-top: 22px;
     color: inherit;
@@ -482,24 +416,7 @@ p.price {
     opacity: 0.6;
 }
 
-
 @media screen and (max-width:750px) {
-    .line {
-        width: 20%;
-    }
-
-    p.pag {
-        font-size: 16px;
-    }
-
-    .baw {
-        display: inline-table;
-    }
-
-    .ous {
-        display: inline-table;
-    }
-
     #menu_vertical {
         display: block;
     }
@@ -530,31 +447,40 @@ p.price {
         display: none;
     }
 
+    .marcas {
+        height: 350px;
+    }
+
+    .brandimg img {
+        width: 100px;
+        height: 100px !important;
+    }
+
+    .brandimg {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3%;
+    }
+
+    .brand {
+        height: 100px;
+    }
+
+    .brand1 {
+        height: 100px;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .slidesec {
+        display: flex;
+    }
 }
 
-@media screen and (min-width: 751px) and (max-width:1000px) {
-    .line {
-        width: 35%;
-    }
-
-    p.pag {
-        font-size: 16px;
-    }
-
-    .baw {
-        height: 900px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3%;
-    }
-
-    .ous {
-        height: 900px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3%;
-    }
-
+@media screen and (min-width: 750px) and (max-width:1000px) {
     #menu_vertical {
         display: block;
     }
@@ -578,7 +504,7 @@ p.price {
     }
 
     .ask {
-        width: 250px;
+        width: 450px;
     }
 
     .contentHead {
@@ -589,14 +515,41 @@ p.price {
         display: none;
     }
 
-}
+    .marcas {
+        height: 550px;
+        width: 100%;
+    }
 
-.content_form{
-    background-color: #babab9;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .brandimg img {
+        width: 150px;
+        height: 150px !important;
+    }
+    .b1 {
+        padding-top: 35px;
+    }
+
+    .brandimg {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3%;
+        width: 100%;
+    }
+
+    .brandimg p {
+        padding-top: 60px;
+    }
+
+    .brand {
+        height: 100px;
+
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .slidesec {
+        display: flex;
+    }
 }
