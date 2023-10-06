@@ -49,12 +49,12 @@ if (isset($_GET['vestuario_id'])) {
         </br>
         <th> <label for="vestuario_des">Descrição:</label>
             <input type="text" name="vestuario_des" id="vestuario_des"
-             value="<?php echo $row['vestuario_des']; ?>" required>
+             value="<?php echo $row['vestuario_desc']; ?>" required>
         </th>
         </br>
         <th> <label for="vestuario_marca">Marca:</label>
             <input type="text" name="vestuario_marca" id="vestuario_marca" 
-            value="<?php echo $row['vestuario']; ?>" required>
+            value="<?php echo $row['vestuario_marca']; ?>" required>
         </th>
         </br>
         <th> <label for="vestuario_cor">Cor:</label>
@@ -68,7 +68,7 @@ if (isset($_GET['vestuario_id'])) {
         </th>
         </br>
         <th> <label for="vestuario_cat">Categoria:</label>
-            <input type="text" name="vestuario" id="vestuario_cat" 
+            <input type="text" name="vestuario_cat" id="vestuario_cat" 
             value="<?php echo $row['vestuario_cat']; ?>" required>
         </th>
         </br>
