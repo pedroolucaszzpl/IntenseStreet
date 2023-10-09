@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/redefinicao.css">
+    <link rel="stylesheet" href="css/rec_senha.css">
     
     <title>Document</title>
 </head>
@@ -31,6 +31,8 @@
             <div>
                 <input id="botao_login" type="submit" value="Redefinir Senha">
             </div>
+
+
             <a class="cadastro" href="cadastro.php">Não tem uma conta?
                  Clique aqui!</a>
                     
