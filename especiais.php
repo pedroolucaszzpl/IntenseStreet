@@ -66,13 +66,15 @@
             <div class="barra">
                 <div id="linhas">
                     <div class="line"></div>
-                    <p class="pag">EDIÇÕES ESPECIAIS</p>
+                    <div class="pag">
+                        <p>EDIÇÕES ESPECIAIS</p>
+                    </div>
                     <div class="line"></div>
                 </div>
             </div>
             <div class="sePurple">
-                <form method="post" class="adicionar" action="./adicionar/add_tenisesp.php">
-                  <input type="submit" class="add" value="+"></input>
+                <form method="post" class="adicionar" action="./adicionar/formadd_tenis.php">
+                    <input type="submit" class="add" value="+"></input>
                 </form>
             </div>
             <div class="calcous">
@@ -119,7 +121,11 @@
 
                 ?>
             </div>
-            <div class="secGreen"></div>
+            <div class="secGreen">
+                <form method="post" class="adicionar" action="./adicionar/formadd_camisa.php">
+                    <input type="submit" class="add" value="+"></input>
+                </form>
+            </div>
             <div class="camibaw">
                 <img src="img/edicaoesp/baw/baw.png" alt="">
                 <p>Camisetas</p>

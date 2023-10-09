@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/add_tenis.css">
+    <link rel="stylesheet" href="../css/add_tenis.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -64,17 +64,25 @@
     </header>
     <main>
         <div class="content_form">
-            <h1>Adicionar Novo Tênis</h1>
-            <form action="update_especiais.php" method="post">
-                <div>URL da Imagem: <input type="text" name="url_imagem"><br></div>
-                <div>Modelo: <input type="text" name="nome"><br></div>
-                <div>Marca: <input type="text" name="marca"><br></div>
-                <div>Descrição: <textarea name="descricao"></textarea><br></div>
-                <div>Preço: <input type="text" name="preco"><br></div>
+            <h1>Adicionar Nova Camisa</h1>
+            <form action="add_camisa.php" method="post">
+                <div>URL da Imagem: <input type="text" name="url_imagem"></div>
+                <div>Modelo: <input type="text" name="nome"></div>
+                <div>Preço: <input type="text" name="preco"></div>
+                <div>Descrição: <textarea name="descricao"></textarea></div>
+                <div>Marca: <input type="text" name="marca"></div>
+                <div>Cor: <input type="text" name="cor"></div>
+                <div>Tamanho: <select name="tamanho" >
+                    <option value="PP">PP</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select></div>
                 <div>Categoria: <select name="categoria">
                     <option value="normal">Normal</option>
                     <option value="especial">Especial</option>
-                </select><br></div>
+                </select></div>
                 <input type="submit" value="Adicionar">
             </form>
         </div>
@@ -111,8 +119,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/homep.js" async></script>
-    <script src="js/main.js" defer></script>
 </body>
 
 </html>
