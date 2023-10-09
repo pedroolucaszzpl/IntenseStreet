@@ -26,14 +26,15 @@ if (isset($_GET['vestuario_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=stylesheet href="../css/style.css">
+    <link rel=stylesheet href="css/update.css">
     <title>Editar Vestuario</title>
 </head>
 
 <body>
+    <div class="container">
     <h2>Editar Vestuario</h2>
     <form action="modelo.php" class="formulario" method="post">
-
+        
         <input type="hidden" name="vestuario_id" id="vestuario_id"
             value="<?php echo $row['vestuario_id']; ?>" required>
 
@@ -75,6 +76,7 @@ if (isset($_GET['vestuario_id'])) {
 
             <button class="btn" type="submit">Atualizar</button>
     </form>
+</div>
 </body>
 
 </html>
