@@ -189,6 +189,36 @@ aside {
    background-color: rgb(255, 255, 255);
 }
 
+.excluir_btn {
+   background-color: red;
+   border-radius: 5px;
+   color: #fff;
+   border: none;
+   padding: 5px 10px;
+   margin: 5px;
+   cursor: pointer;
+   text-decoration: none;
+}
+.excluir_btn:hover {
+   text-decoration: none;
+}
+
+.editar_btn {
+   margin-top: 5px;
+   background-color: rgb(126, 126, 235);
+   border-radius: 5px;
+   color: #fff;
+   border: none;
+   padding: 5px 10px;
+   margin: 5px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.editar_btn:hover {
+   text-decoration: none;
+}
+
 #linhas {
    display: flex;
 }
@@ -239,6 +269,10 @@ p.price{
    font-size: 32px;
    font-family: "Bauhaus";
    font-weight: bold;
+}
+
+.sweater { 
+   margin-bottom: 10px;
 }
 /*footer css*/
 
