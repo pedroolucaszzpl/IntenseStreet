@@ -9,9 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             //inicializar a sessão do usuário 
             session_start();
             $_SESSION['usuario_logado'] = $usuario;
-            header ('Location: main.php');
+            header ('Location: especiais.php');
     } else {
-        header ('Location: index.php');
+        header ('Location: logar.php');
     }
     
 }

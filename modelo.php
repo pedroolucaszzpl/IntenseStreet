@@ -67,21 +67,23 @@
             </div>
             <div class="clothes">
             <?php
-                session_start();
                 include 'conexao.php';
                 // Faça a consulta SQL
-                $sql = "SELECT * FROM vestuario WHERE vestuario_cat = 'normal'";
+                $sql = "SELECT * FROM vestuario WHERE vestuario_cat = 'normal' LIMIT 4" ;
                 $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
                 
                 // Verifique se a consulta foi bem-sucedida
                 if ($resultado) {
                     if ($resultado->num_rows > 0) {
                         while ($row = $resultado->fetch_assoc()) {
-                            echo '<div class="shirt">';
+                            echo '<div class="sweater">';
                             echo "<img src='" . $row["vestuario_img"] . "'>";
                             echo "<p class='desc'>" . $row["vestuario_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["vestuario_preco"] . "</p>";
+                            echo "<a class='excluir_btn' href='excluir_vest.php?vestuario_id=".$row['vestuario_id']."'>Excluir</a>";
+                            echo "<a class='editar_btn' href='update_vest.php?vestuario_id=".$row['vestuario_id']."'>Editar</a>";
                             echo "</div>";
+
                         }
 
                     } else {
@@ -106,7 +108,7 @@
             <?php
                 include 'conexao.php';
                 // Faça a consulta SQL
-                $sql = "SELECT * FROM acessorios WHERE acessorio_cat = 'normal'";
+                $sql = "SELECT * FROM acessorios WHERE acessorio_cat = 'normal' LIMIT 4";
                 $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
                 
                 // Verifique se a consulta foi bem-sucedida
@@ -117,7 +119,10 @@
                             echo "<img src='" . $row["acessorio_img"] . "'>";
                             echo "<p class='desc'>" . $row["acessorio_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["acessorio_preco"] . "</p>";
+                            echo "<a class='excluir_btn' href='excluir_aces.php?acessorio_id=".$row['acessorio_id']."'>Excluir</a>";
+                            echo "<a class='editar_btn' href='update_aces.php?acessorio_id=".$row['acessorio_id']."'>Editar</a>";
                             echo "</div>";
+
                         }
 
                     } else {
@@ -129,22 +134,10 @@
                
                 ?>
                 <div class="sweater">
-                    <!--<img src="img/modelos/corrente.jpg" alt="">
-                    <p class="desc">COLAR JORDAN</p>
-                    <p class="desc">COR-PRATA/DOURADO</p>
-                    <p class="price">R$109,90</p>-->
                 </div>
                 <div class="shirt">
-                    <!-- <img src="img/modelos/chapéu.jpg" alt="">
-                   <p class="desc">CHAPÉU BUCKET NIKE</p>
-                    <p class="desc">COR-PRETO</p>
-                    <p class="price">R$114,90</p>-->
                 </div>
                 <div class="sweater">
-                    <!--<img src="img/modelos/bolsa.jpg" alt="">
-                    <p class="desc">BOLSA TOMMY HILFIGER</p>
-                    <p class="desc">COR-PRETO</p>
-                    <p class="price">R$229,90</p>-->
                 </div>
             </div>
         </div>
@@ -157,33 +150,44 @@
                 </div>
             </div>
             <div class="clothes">
+            <?php
+                include 'conexao.php';
+                // Faça a consulta SQL
+                $sql = "SELECT * FROM tenis WHERE tenis_cat = 'normal' LIMIT 4";
+                $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
+                
+                // Verifique se a consulta foi bem-sucedida
+                if ($resultado) {
+                    if ($resultado->num_rows > 0) {
+                        while ($row = $resultado->fetch_assoc()) {
+                            echo '<div class="sweater">';
+                            echo "<img src='" . $row["tenis_img"] . "'>";
+                            echo "<p class='desc'>" . $row["tenis_modelo"] . "</p>";
+                            echo "<p class='price'>R$" . $row["tenis_preco"] . "</p>";
+                            echo "<a class='excluir_btn' href='excluir_calc.php?tenis_id=".$row['tenis_id']."'>Excluir</a>";
+                            echo "<a class='editar_btn' href='update_tenis.php?tenis_id=".$row['tenis_id']."'>Editar</a>";
+                            echo "</div>";
+
+                        }
+
+                    } else {
+                        echo "Nenhum resultado encontrado.";
+                    }
+                } else {
+                    die("Erro na consulta: " . $mysqli->error);
+                }
+                ?>
+                <div class="sweater">
+                   
+                </div>
                 <div class="shirt">
-                    <img src="https://images.tcdn.com.br/img/img_prod/690339/tenis_ous_imigrante_pb_gold_essencial_black_10881_1_aa781a830ec58927c93a60b487aff286.jpg" alt="">
-                    <p class="desc">OUS IMIGRANTE PB GOLD ESSENCIAL BLACK</p>
-                    <p class="desc">COR-PRETO</p>
-                    <p class="price">R$329,90</p>
+                    
                 </div>
                 <div class="sweater">
-                    <img src="https://www.tradeinn.com/f/13855/138556053/nike-air-max-sc-leather-trainers.jpg" alt="">
-                    <p class="desc">NIKE AIR MAX SC LEATHER TRAINERS WHITE</p>
-                    <p class="desc">COR-BRANCO</p>
-                    <p class="price">R$309,90</p>
-                </div>
-                <div class="shirt">
-                    <img src="https://static.lojafeiraodoscalcados.com.br/public/feiraodoscalcados/imagens/produtos/tenis-adidas-vs-pace-2-0-branco-6488e78a8c9d6.jpg" alt="">
-                    <p class="desc">ADIDAS VS PACE 2.0</p>
-                    <p class="desc">COR-BRANCO</p>
-                    <p class="price">R$339,40</p>
-                </div>
-                <div class="sweater">
-                    <img src="https://static.netshoes.com.br/produtos/tenis-baw-break-anniversary-masculino/19/QNL-0256-319/QNL-0256-319_zoom1.jpg?ts=1692218107&ims=420x" alt="">
-                    <p class="desc">BAW BREAK ANNIVERSARY MASCULINO</p>
-                    <p class="desc">COR-BRANCO E BEGE</p>
-                    <p class="price">R$369,90</p>
+                   
                 </div>
             </div>
         </div>
-        <a href='update1.php?vestuario_id=" . $row["vestuario_id"] . "'>Editar</a>
     </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">

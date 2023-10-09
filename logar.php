@@ -29,7 +29,7 @@
 
             </div>
 
-            <a class="cadastro" href="rec_senha.php">Esqueceu sua senha?
+            <a class="cadastro" href="redefinicao.php">Esqueceu sua senha?
                  Clique aqui!</a>
 
             <div id="linhas">
