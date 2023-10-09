@@ -80,7 +80,8 @@
                             echo "<img src='" . $row["vestuario_img"] . "'>";
                             echo "<p class='desc'>" . $row["vestuario_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["vestuario_preco"] . "</p>";
-                            echo '<a href="update_vest.php?vestuario_id=' . $row["vestuario_id"] . '">Editar</a>';
+                            echo "<a class='excluir_btn' href='excluir_vest.php?vestuario_id=".$row['vestuario_id']."'>Excluir</a>";
+                            echo "<a class='editar_btn' href='update_vest.php?vestuario_id=".$row['vestuario_id']."'>Editar</a>";
                             echo "</div>";
 
                         }
@@ -118,7 +119,8 @@
                             echo "<img src='" . $row["acessorio_img"] . "'>";
                             echo "<p class='desc'>" . $row["acessorio_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["acessorio_preco"] . "</p>";
-                            echo '<a href="update_aces.php?acessorio_id=' . $row["acessorio_id"] . '">Editar</a>';
+                            echo "<a class='excluir_btn' href='excluir_aces.php?acessorio_id=".$row['acessorio_id']."'>Excluir</a>";
+                            echo "<a class='editar_btn' href='update_aces.php?acessorio_id=".$row['acessorio_id']."'>Editar</a>";
                             echo "</div>";
 
                         }
@@ -162,7 +164,8 @@
                             echo "<img src='" . $row["tenis_img"] . "'>";
                             echo "<p class='desc'>" . $row["tenis_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["tenis_preco"] . "</p>";
-                            echo '<a href="update_tenis.php?tenis_id=' . $row["tenis_id"] . '">Editar</a>';
+                            echo "<a class='excluir_btn' href='excluir_calc.php?tenis_id=".$row['tenis_id']."'>Excluir</a>";
+                            echo "<a class='editar_btn' href='update_tenis.php?tenis_id=".$row['tenis_id']."'>Editar</a>";
                             echo "</div>";
 
                         }
