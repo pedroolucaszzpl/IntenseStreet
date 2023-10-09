@@ -95,11 +95,13 @@
                     if ($resultado->num_rows > 0) {
                         while ($row = $resultado->fetch_assoc()) {
                             echo "<div class= 'all'>";
+                            echo "<a href='mostruario.php?id=".$row['tenis_id']."'>";
                             echo "<div class= 'tenisous'>";
                             echo "<img src='" . $row["tenis_img"] . "'>";
                             echo "<p class='name'>" . $row["tenis_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["tenis_preco"] . "</p>";
                             echo "</div>";
+                            echo "</a>";
                             echo "<div class='exclude'>";
                             echo "<form method='POST' action='excluir/excluir_calc.php'>";
                             echo "<input type='hidden' name='tenis_id' value='" . $row['tenis_id'] . "'>";
@@ -144,11 +146,13 @@
                     if ($resultado->num_rows > 0) {
                         while ($row = $resultado->fetch_assoc()) {
                             echo "<div class='all'>";
+                            echo "<a href='mostruario.php?id=".$row['camiseta_id']."'>";
                             echo '<div class="camisabaw">';
                             echo "<img src='" . $row["camiseta_img"] . "'>";
                             echo "<p class='name'>" . $row["camiseta_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["camiseta_preco"] . "</p>";
                             echo "</div>";
+                            echo "</a>";
                             echo "<div class='exclude'>";
                             echo "<form method='POST' action='excluir/excluir_camisa.php'>";
                             echo "<input type='hidden' name='tenis_id' value='" . $row['camiseta_id'] . "'>";

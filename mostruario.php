@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="css/mostruario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /><!--Google Link Icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--Google Link Icon-->
     <title>IntenseStreet Calçados</title>
 </head>
 
 <body>
-<header>
+    <header>
         <nav class="navbar">
             <div class="contentHead">
                 <div class="navbar-menu">
@@ -25,7 +26,7 @@
                                 <option value="calcados">Calçados</option>
                                 <option value="acessorios">Acessórios</option>
                                 <option value="vestuario">Vestuário</option>
-                               <option value="especial">Edições Especiais</option>
+                                <option value="especial">Edições Especiais</option>
 
                             </select>
                         </li>
@@ -58,36 +59,56 @@
             </a>
         </nav>
     </header>
-   <main> 
-   <div class="barra">
+    <main>
+        <div class="barra">
             <div id="linhas">
                 <div class="line"></div>
-                <p class="pag">Nome do produto</p>
+                <p class="pag">DESCRIÇÃO</p>
                 <div class="line"></div>
             </div>
         </div>
         <div class="desc_produto">
-                <div class="fotos">
-                    <img class="img1" src="https://dillysports.vtexassets.com/arquivos/ids/169916-800-auto?v=637980880943170000&width=800&height=auto&aspect=true" alt="foto1">
-                    <img class="img1" src="https://dillysports.vtexassets.com/arquivos/ids/169925-800-auto?v=637980881569270000&width=800&height=auto&aspect=true" alt="foto2">
-                    <img class="img1" src="https://dillysports.vtexassets.com/arquivos/ids/169933-800-auto?v=637980882262030000&width=800&height=auto&aspect=true" alt="foto3">                </div>
-                <div class="principal">
-                    <img class="img2" src="https://dillysports.vtexassets.com/arquivos/ids/171847-800-auto?v=637994471601300000&width=800&height=auto&aspect=true" alt="foto4">
-                </div>
-        <div class="descricao">
+            <div class="principal">
+                <img class="img2"
+                    src="https://dillysports.vtexassets.com/arquivos/ids/171847-800-auto?v=637994471601300000&width=800&height=auto&aspect=true">
+            </div>
+
+            <?php
+            session_start();
+            include 'conexao.php';
+            $tenis_id = GET['id'];
+            $sql = "SELECT * FROM tenis WHERE tenis_id = '$tenis_id'";
+            $resultado = $mysql->query($sql);
+
+            if ($resultado) {
+                if ($resultado->num_rows() > 0) {
+                    while ($row = $resultado->fetch_assoc()) {
+                        echo "<div class='principal'>";
+                        echo "<img class='img2' src='" . $row["tenis_img"];
+                        echo "</div>";
+                        echo "<div class='descricao'>";
+                        echo "<div class='nome'>";
+                        echo "<h3>" . $row["tenis_modelo"] . "</h3>";
+                        echo "</div>";
+                        echo "<div class='cor'>";
+                        echo "<label for='cor'>Cor:</label>";
+                        echo "<p class='desc'>" . $row["tenis_cor"] . "</p>";
+                        echo "</div>";
+                        echo "<div class='tamanho'>";
+                        echo "<label for='tamanho'>Tamanho:</label>";
+                        echo "<p class='desc'>" . $row["tenis_tamanho"] . "</p>";
+                        echo "</div>";
+                        echo "</div>";
+
+                    }
+                }
+            }
+            ?>
+            <div class="nome">
+                <h3>Nome do produto</h3>
+            </div>
             <div class="cor">
                 <label for="cor">Cor:</label>
-                <select id="cor">
-                    <option value="preto">Preto</option>
-                    <option value="branco">Branco</option>
-                    <option value="preto e azul">Preto e Azul</option>
-                    <option value="preto e roxo">Preto e Roxo</option>
-                    <option value="preto e amarelo">Preto e Amarelo</option>
-                    <option value="branco e azul">Branco e Azul</option>
-                    <option value="branco e rosa">Branco e Rosa</option>
-                    <option value="bege e marrom">Bege e Marrom</option>
-                    <option value="cinza, preto e branco">Cinza,Preto e Branco</option>
-                </select>
             </div>
             <div class="tam">
                 <label for="tamanho">Tamanho:</label>
@@ -104,7 +125,7 @@
                 </select>
             </div>
             <div class="valor">
-            <h5>R$Valor do produto</h5>
+                <h5>R$Valor do produto</h5>
             </div>
             <div class="pagamento">
                 <label for="pagamento">Forma de Pagamento:</label>
@@ -120,7 +141,7 @@
             </div>
         </div>
         </div>
-   </main>
+    </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">
         <footer>
@@ -153,8 +174,8 @@
             </div>
         </footer>
     </div>
-<script src="js/homep.js" async></script>
-<script src="js/main.js" defer></script>
+    <script src="js/homep.js" async></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
