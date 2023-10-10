@@ -28,6 +28,7 @@ body {
     font-family: "Bauhaus";
     src: url(../BauhausFont/BauhausRegular.ttf);
 }
+
 #icon {
     color: #fff;
     cursor: pointer;
@@ -59,7 +60,6 @@ aside {
 }
 
 .navbar {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -167,21 +167,25 @@ aside {
     padding-left: 5px;
 }
 
-.logarConta{
+.logarConta {
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70px;
     height: 40px;
 }
-.logarConta a{
+
+.logarConta a {
     text-decoration: none;
     color: #fff;
 }
-.logarConta:hover{
+
+.logarConta:hover {
     background-color: var(--InGreen);
     border-radius: 3px;
 }
+
 /*main*/
 .barra {
     width: 100%;
@@ -206,27 +210,27 @@ aside {
     font-weight: 700;
 }
 
-.clothes{
+.clothes {
     padding-top: 70px;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     background: #211B15;
     width: 100%;
 }
 
-.clothes img{
+.clothes img {
     width: 300px;
     height: 300px;
 }
 
-.clothes div{
+.clothes div {
     padding-left: 35px;
-    padding-right:35px;
+    padding-right: 35px;
     text-align: left;
 }
 
-p.desc{
+p.desc {
     color: #fff;
     font-size: 16px;
     font-family: "Bauhaus";
@@ -234,12 +238,13 @@ p.desc{
     max-width: 300px;
 }
 
-p.price{
+p.price {
     color: #fff;
     font-size: 32px;
     font-family: "Bauhaus";
     font-weight: bold;
 }
+
 /*footer css*/
 
 .footer-clean {
@@ -316,7 +321,7 @@ p.price{
     opacity: 0.6;
 }
 
-@media screen and  (max-width:750px) {
+@media screen and (max-width:750px) {
     #menu_vertical {
         display: block;
     }
@@ -336,7 +341,11 @@ p.price{
     }
 
     .search {
-        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 530px;
+        height: 20px;
     }
 
     .contentHead {
@@ -403,4 +412,26 @@ p.price{
         width: 200px;
     }
 }
-    /* .ask{ */
+
+.forms input[type="submit"] {
+    display: none;
+}
+
+.submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#lupa {
+    width: 30px;
+}
+
+#lupa {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ask {
+    padding-right: 40px;
+}

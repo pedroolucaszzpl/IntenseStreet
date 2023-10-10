@@ -553,3 +553,25 @@ button {
         display: flex;
     }
 }
+.forms input[type="submit"] {
+    display: none;
+}
+
+.submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#lupa {
+    width: 30px;
+}
+
+#lupa {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ask {
+    padding-right: 40px; 
+}

@@ -17,9 +17,17 @@
 }
 
 body {
+    background-color: #211B15;
     width: 100%;
     height: 100%;
-    background-color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+/*cabeçalho*/
+@font-face {
+    font-family: "Bauhaus";
+    src: url(../BauhausFont/BauhausRegular.ttf);
 }
 
 #icon {
@@ -44,13 +52,8 @@ body {
     display: none;
 }
 
-menu {
+aside {
     display: none;
-}
-
-@font-face {
-    font-family: "Bauhaus";
-    src: url(/Bauhaus\ Font\ Family/);
 }
 
 .container {
@@ -184,73 +187,7 @@ menu {
     border-radius: 3px;
 }
 
-.slidesec {
-    display: none;
-}
-
-.galery {
-    width: 100%;
-    height: 30%;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-}
-
-.galery .fotos {
-    width: 500%;
-    animation-name: animacao;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-
-.galery .fotos img {
-    width: 19.9%;
-    margin-right: 0;
-}
-
-@keyframes animacao {
-    0% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    95% {
-        margin-left: -300%;
-    }
-
-    100% {
-        margin-left: -400%;
-    }
-}
-
-button {
-    all: unset;
-    cursor: pointer;
-    outline: revert;
-}
-
+/*main*/
 .barra {
     width: 100%;
     height: 35px;
@@ -259,7 +196,6 @@ button {
 
 #linhas {
     display: flex;
-    align-items: center;
 }
 
 .line {
@@ -271,60 +207,46 @@ button {
 
 .pag {
     font-size: 20px;
-    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
+    font-family: "Bauhaus";
     font-weight: 700;
 }
 
-.brandimg {
+.clothes {
+    padding-top: 70px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 2% 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #211B15;
+    width: 100%;
 }
 
-.forms {
-    display: flex;
+.clothes img {
+    width: 300px;
+    height: 300px;
 }
 
-.marcas {
-    background-color: var(--black);
-    height: 310px;
+.clothes div {
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: left;
 }
-
-.brandimg img {
-    width: 200px;
-    height: 200px;
-    border: 3px solid transparent;
-    /* Adicione uma borda transparente */
-    transition: border 0.3s;
+.error-message {
+    color: #ffffff; /* Cor branca */
+    text-align: center;
 }
-
-.brand {
-    height: 200px;
-}
-
-.brandimg img.gren:hover {
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #00FF00, #3cff3c, #85ff85) border-box;
-    border: 3px solid transparent;
-}
-
-.brandimg img.purpl:hover {
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #9400D3, #9b1dd2, #a64ecc) border-box;
-    border: 3px solid transparent;
-}
-
-.b1 p {
-    padding-top: 2px;
-    font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
+p.desc {
     color: #fff;
-    font-weight: bold;
+    font-size: 16px;
+    font-family: "Bauhaus";
+    white-space: wrap;
+    max-width: 300px;
 }
 
-.b1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+p.price {
+    color: #fff;
+    font-size: 32px;
+    font-family: "Bauhaus";
+    font-weight: bold;
 }
 
 /*footer css*/
@@ -342,7 +264,7 @@ button {
     font-size: 16px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer-clean .item {
         text-align: center;
         padding-bottom: 20px;
@@ -355,65 +277,26 @@ button {
     }
 }
 
-.footer-clean ul {
-    padding: 0;
-    list-style: none;
-    line-height: 1.6;
-    font-size: 14px;
-    margin-bottom: 0;
+.footer-clean {
+    position: fixed; /* Mantém o footer fixo na tela */
+    bottom: 0; /* Coloca o footer no final da página */
+    width: 100%; /* Ocupa toda a largura */
+    padding: 30px 0;
+    background-color: var(--InPurple);
+    color: white;
+    z-index: 999; /* Certifica-se de que o footer esteja sempre acima do conteúdo */
 }
 
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
 .footer-clean ul a {
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
-}
-
-.footer-clean ul a:hover {
-    opacity: 1;
-}
-
-.footer-clean .item.social {
-    text-align: right;
-}
-
-
-.footer-clean .item.social>a {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    margin-left: 10px;
-    margin-top: 22px;
-    color: inherit;
-    opacity: 0.75;
-}
-
-.footer-clean .item.social>a:hover {
-    opacity: 0.9;
-}
-
-@media (max-width:991px) {
-    .footer-clean .item.social>a {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width:767px) {
-    .footer-clean .item.social>a {
-        margin-top: 10px;
-    }
-}
-
-.footer-clean .copyright {
-    margin-top: 14px;
-    margin-bottom: 0;
-    font-size: 13px;
-    opacity: 0.6;
 }
 
 @media screen and (max-width:750px) {
@@ -480,7 +363,7 @@ button {
     }
 }
 
-@media screen and (min-width: 750px) and (max-width:1000px) {
+@media screen and (min-width: 751px) and (max-width:1000px) {
     #menu_vertical {
         display: block;
     }
@@ -500,56 +383,33 @@ button {
     }
 
     .search {
-        width: 200px;
-    }
-
-    .ask {
-        width: 450px;
-    }
-
-    .contentHead {
-        display: none;
-    }
-
-    #carrinho {
-        display: none;
-    }
-
-    .marcas {
-        height: 550px;
-        width: 100%;
-    }
-
-    .brandimg img {
-        width: 150px;
-        height: 150px !important;
-    }
-    .b1 {
-        padding-top: 35px;
-    }
-
-    .brandimg {
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3%;
-        width: 100%;
-    }
-
-    .brandimg p {
-        padding-top: 60px;
-    }
-
-    .brand {
-        height: 100px;
-
-    }
-
-    .slide {
-        display: none;
-    }
-
-    .slidesec {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 530px;
+        height: 20px;
     }
+}
+
+.forms input[type="submit"] {
+    display: none;
+}
+
+.submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#lupa {
+    width: 30px;
+}
+
+#lupa {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ask {
+    padding-right: 40px; 
 }
