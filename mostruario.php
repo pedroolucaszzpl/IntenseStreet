@@ -69,11 +69,12 @@
         <div class="barra">
             <div id="linhas">
                 <div class="line"></div>
-                <p class="pag">Nome do produto</p>
+                <p class="pag">DESCRIÇÃO</p>
                 <div class="line"></div>
             </div>
         </div>
         <div class="desc_produto">
+<<<<<<< HEAD
             <div class="fotos">
                 <img class="img1"
                     src="https://dillysports.vtexassets.com/arquivos/ids/169916-800-auto?v=637980880943170000&width=800&height=auto&aspect=true"
@@ -136,6 +137,81 @@
                 </div>
             </div>
         </div>
+=======
+            <div class="principal">
+                <img class="img2"
+                    src="https://dillysports.vtexassets.com/arquivos/ids/171847-800-auto?v=637994471601300000&width=800&height=auto&aspect=true">
+            </div>
+
+            <?php
+            session_start();
+            include 'conexao.php';
+            $tenis_id = GET['id'];
+            $sql = "SELECT * FROM tenis WHERE tenis_id = '$tenis_id'";
+            $resultado = $mysql->query($sql);
+
+            if ($resultado) {
+                if ($resultado->num_rows() > 0) {
+                    while ($row = $resultado->fetch_assoc()) {
+                        echo "<div class='principal'>";
+                        echo "<img class='img2' src='" . $row["tenis_img"];
+                        echo "</div>";
+                        echo "<div class='descricao'>";
+                        echo "<div class='nome'>";
+                        echo "<h3>" . $row["tenis_modelo"] . "</h3>";
+                        echo "</div>";
+                        echo "<div class='cor'>";
+                        echo "<label for='cor'>Cor:</label>";
+                        echo "<p class='desc'>" . $row["tenis_cor"] . "</p>";
+                        echo "</div>";
+                        echo "<div class='tamanho'>";
+                        echo "<label for='tamanho'>Tamanho:</label>";
+                        echo "<p class='desc'>" . $row["tenis_tamanho"] . "</p>";
+                        echo "</div>";
+                        echo "</div>";
+
+                    }
+                }
+            }
+            ?>
+            <div class="nome">
+                <h3>Nome do produto</h3>
+            </div>
+            <div class="cor">
+                <label for="cor">Cor:</label>
+            </div>
+            <div class="tam">
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                </select>
+            </div>
+            <div class="valor">
+                <h5>R$Valor do produto</h5>
+            </div>
+            <div class="pagamento">
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento">
+                    <option value="credito">Cartão de Crédito</option>
+                    <option value="boleto">Boleto</option>
+                    <option value="Pix">Pix</option>
+                </select>
+            </div>
+            <div class="botoes-mostruario">
+                <button id="botao-add">COMPRAR AGORA</button>
+                <button id="botao-add">ADICIONAR AO CARRINHO</button>
+            </div>
+        </div>
+        </div>
+>>>>>>> b75c0236346ef8d0c4ea38509169afa6f5eb8db2
     </main>
     <!-- Início do Rodapé -->
     <div class="footer-clean">

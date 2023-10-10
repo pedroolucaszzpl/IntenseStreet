@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!--Google Link Icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="css/especiais.css">
     <title>IntenseStreet Páginas Especial</title>
 </head>
@@ -70,11 +72,17 @@
             <div class="barra">
                 <div id="linhas">
                     <div class="line"></div>
-                    <p class="pag">EDIÇÕES ESPECIAIS</p>
+                    <div class="pag">
+                        <p>EDIÇÕES ESPECIAIS</p>
+                    </div>
                     <div class="line"></div>
                 </div>
             </div>
-            <div class="sePurple"></div>
+            <div class="sePurple">
+                <form method="post" class="adicionar" action="./adicionar/formadd_tenis.php">
+                    <input type="submit" class="add" value="+"></input>
+                </form>
+            </div>
             <div class="calcous">
                 <img src="img/edicaoesp/ous/ous.png" alt="">
                 <p>Calçados</p>
@@ -93,11 +101,13 @@
                     if ($resultado->num_rows > 0) {
                         while ($row = $resultado->fetch_assoc()) {
                             echo "<div class= 'all'>";
+                            echo "<a href='mostruario.php?id=".$row['tenis_id']."'>";
                             echo "<div class= 'tenisous'>";
                             echo "<img src='" . $row["tenis_img"] . "'>";
                             echo "<p class='name'>" . $row["tenis_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["tenis_preco"] . "</p>";
                             echo "</div>";
+                            echo "</a>";
                             echo "<div class='exclude'>";
                             echo "<form method='POST' action='excluir/excluir_calc.php'>";
                             echo "<input type='hidden' name='tenis_id' value='" . $row['tenis_id'] . "'>";
@@ -119,7 +129,11 @@
 
                 ?>
             </div>
-            <div class="secGreen"></div>
+            <div class="secGreen">
+                <form method="post" class="adicionar" action="./adicionar/formadd_camisa.php">
+                    <input type="submit" class="add" value="+"></input>
+                </form>
+            </div>
             <div class="camibaw">
                 <img src="img/edicaoesp/baw/baw.png" alt="">
                 <p>Camisetas</p>
@@ -138,11 +152,13 @@
                     if ($resultado->num_rows > 0) {
                         while ($row = $resultado->fetch_assoc()) {
                             echo "<div class='all'>";
+                            echo "<a href='mostruario.php?id=".$row['camiseta_id']."'>";
                             echo '<div class="camisabaw">';
                             echo "<img src='" . $row["camiseta_img"] . "'>";
                             echo "<p class='name'>" . $row["camiseta_modelo"] . "</p>";
                             echo "<p class='price'>R$" . $row["camiseta_preco"] . "</p>";
                             echo "</div>";
+                            echo "</a>";
                             echo "<div class='exclude'>";
                             echo "<form method='POST' action='excluir/excluir_camisa.php'>";
                             echo "<input type='hidden' name='tenis_id' value='" . $row['camiseta_id'] . "'>";
