@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/vestuario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /><!--Google Link Icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--Google Link Icon-->
     <title>Document</title>
 </head>
+
 <body>
-<header>
+    <header>
         <nav class="navbar">
             <div class="contentHead">
                 <div class="navbar-menu">
@@ -23,7 +26,7 @@
                                 <option value="calcados">Calçados</option>
                                 <option value="acessorios">Acessórios</option>
                                 <option value="vestuario">Vestuário</option>
-                               <option value="especial">Edições Especiais</option>
+                                <option value="especial">Edições Especiais</option>
 
                             </select>
                         </li>
@@ -45,8 +48,14 @@
                 </menu>
             </div>
             <div class="search">
-                <img id="lupa" src="img/lupa.png" alt="lupa">
-                <input type="text" placeholder="   O que você precisa?" class="ask">
+                <form class="forms" action="pesquisa.php" method="post">
+                    <label for="termo" class="sr-only">O que você precisa?</label>
+                    <input type="text" id="termo" placeholder=" O que você precisa?" class="ask" name="termo">
+                    <label for="submit" class="sr-only">Pesquisar</label>
+                    <button type="submit" id="submit" class="submit-btn">
+                        <img id="lupa" src="./img/lupa.png" alt="lupa">
+                    </button>
+                </form>
             </div>
             <div class="buy">
                 <img id="carrinho" src="img/carrinho.png" alt="">
@@ -66,10 +75,10 @@
                 </div>
             </div>
             <div class="clothes">
-            <?php
+                <?php
                 include 'conexao.php';
                 // Faça a consulta SQL
-                $sql = "SELECT * FROM vestuario WHERE vestuario_cat = 'normal' LIMIT 4" ;
+                $sql = "SELECT * FROM vestuario WHERE vestuario_cat = 'normal' LIMIT 4";
                 $resultado = $mysqli->query($sql); // $mysqli é o objeto da conexão
                 
                 // Verifique se a consulta foi bem-sucedida
@@ -92,7 +101,7 @@
                 } else {
                     die("Erro na consulta: " . $mysqli->error);
                 }
-               
+
                 ?>
             </div>
         </div>
@@ -105,7 +114,7 @@
                 </div>
             </div>
             <div class="clothes">
-            <?php
+                <?php
                 include 'conexao.php';
                 // Faça a consulta SQL
                 $sql = "SELECT * FROM acessorios WHERE acessorio_cat = 'normal' LIMIT 4";
@@ -131,7 +140,7 @@
                 } else {
                     die("Erro na consulta: " . $mysqli->error);
                 }
-               
+
                 ?>
                 <div class="sweater">
                 </div>
@@ -150,7 +159,7 @@
                 </div>
             </div>
             <div class="clothes">
-            <?php
+                <?php
                 include 'conexao.php';
                 // Faça a consulta SQL
                 $sql = "SELECT * FROM tenis WHERE tenis_cat = 'normal' LIMIT 4";
@@ -178,13 +187,13 @@
                 }
                 ?>
                 <div class="sweater">
-                   
+
                 </div>
                 <div class="shirt">
-                    
+
                 </div>
                 <div class="sweater">
-                   
+
                 </div>
             </div>
         </div>
@@ -223,4 +232,5 @@
     </div>
     <script src="js/main.js" defer></script>
 </body>
+
 </html>

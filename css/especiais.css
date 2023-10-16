@@ -62,7 +62,6 @@ aside {
 }
 
 .navbar {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -91,6 +90,7 @@ aside {
     width: 100px;
 }
 
+
 .content {
     display: flex;
 }
@@ -98,7 +98,6 @@ aside {
 #logo1 {
     width: 100%;
 }
-
 .navbar-items {
     display: flex;
     flex-direction: row;
@@ -140,7 +139,7 @@ aside {
 }
 
 #lupa {
-    width: 6%;
+    width: 30px;
     padding-right: 20px;
 }
 
@@ -152,7 +151,7 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 430px;
+    width: 530px;
     height: 20px;
 }
 
@@ -171,6 +170,7 @@ aside {
 }
 
 .logarConta {
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,8 +529,13 @@ p.price {
         margin: 8px;
     }
 
+
     .search {
-        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 530px;
+        height: 20px;
     }
 
     .contentHead {
@@ -584,6 +589,7 @@ p.price {
         margin: 8px;
     }
 
+
     .search {
         width: 200px;
     }
@@ -602,6 +608,29 @@ p.price {
 
 }
 
+<<<<<<< HEAD
+.forms input[type="submit"] {
+    display: none;
+}
+.submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#lupa {
+    width: 30px;
+}
+
+#lupa {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ask {
+    padding-right: 40px;
+}
+=======
 .content_form{
     background-color: #babab9;
     width: 100%;
@@ -611,3 +640,4 @@ p.price {
     align-items: center;
     justify-content: center;
 }
+>>>>>>> b75c0236346ef8d0c4ea38509169afa6f5eb8db2

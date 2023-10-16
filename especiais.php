@@ -50,8 +50,14 @@
                 </menu>
             </div>
             <div class="search">
-                <img id="lupa" src="img/lupa.png" alt="lupa">
-                <input type="text" placeholder="   O que você precisa?" class="ask">
+                <form class="forms" action="pesquisa.php" method="post">
+                    <label for="termo" class="sr-only">O que você precisa?</label>
+                    <input type="text" id="termo" placeholder=" O que você precisa?" class="ask" name="termo">
+                    <label for="submit" class="sr-only">Pesquisar</label>
+                    <button type="submit" id="submit" class="submit-btn">
+                        <img id="lupa" src="img/lupa.png" alt="lupa">
+                    </button>
+                </form>
             </div>
             <div class="buy">
                 <img id="carrinho" src="img/carrinho.png" alt="">

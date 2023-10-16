@@ -28,6 +28,7 @@ body {
    font-family: "Bauhaus";
    src: url(../BauhausFont/BauhausRegular.ttf);
 }
+
 #icon {
    color: #fff;
    cursor: pointer;
@@ -59,12 +60,20 @@ aside {
 }
 
 .navbar {
+<<<<<<< HEAD
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0 5px 0;
+    background-color: var(--black) !important;
+=======
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
    padding: 5px 0 5px 0;
    background-color: var(--black) !important;
+>>>>>>> b75c0236346ef8d0c4ea38509169afa6f5eb8db2
 }
 
 .navbar-menu {
@@ -167,6 +176,25 @@ aside {
    padding-left: 5px;
 }
 
+<<<<<<< HEAD
+.logarConta {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+}
+
+.logarConta a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logarConta:hover {
+    background-color: var(--InGreen);
+    border-radius: 3px;
+=======
 .logarConta{
    display: flex;
    align-items: center;
@@ -181,7 +209,9 @@ aside {
 .logarConta:hover{
    background-color: var(--InGreen);
    border-radius: 3px;
+>>>>>>> b75c0236346ef8d0c4ea38509169afa6f5eb8db2
 }
+
 /*main*/
 .barra {
    width: 100%;
@@ -236,6 +266,41 @@ aside {
    font-weight: 700;
 }
 
+<<<<<<< HEAD
+.clothes {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #211B15;
+    width: 100%;
+}
+
+.clothes img {
+    width: 300px;
+    height: 300px;
+}
+
+.clothes div {
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: left;
+}
+
+p.desc {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Bauhaus";
+    white-space: wrap;
+    max-width: 300px;
+}
+
+p.price {
+    color: #fff;
+    font-size: 32px;
+    font-family: "Bauhaus";
+    font-weight: bold;
+=======
 .clothes{
    padding-top: 70px;
    display:flex;
@@ -273,7 +338,9 @@ p.price{
 
 .sweater { 
    margin-bottom: 10px;
+>>>>>>> b75c0236346ef8d0c4ea38509169afa6f5eb8db2
 }
+
 /*footer css*/
 
 .footer-clean {
@@ -350,10 +417,17 @@ p.price{
    opacity: 0.6;
 }
 
+<<<<<<< HEAD
+@media screen and (max-width:750px) {
+    #menu_vertical {
+        display: block;
+    }
+=======
 @media screen and  (max-width:750px) {
    #menu_vertical {
        display: block;
    }
+>>>>>>> b75c0236346ef8d0c4ea38509169afa6f5eb8db2
 
    #icon {
        padding-left: 8px;
@@ -369,6 +443,15 @@ p.price{
        margin: 8px;
    }
 
+<<<<<<< HEAD
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 530px;
+        height: 20px;
+    }
+=======
    .search {
        display: flex;
        align-items: center;
@@ -376,6 +459,7 @@ p.price{
        width: 530px;
        height: 20px;
    }
+>>>>>>> b75c0236346ef8d0c4ea38509169afa6f5eb8db2
 
    .contentHead {
        display: none;
@@ -441,4 +525,30 @@ p.price{
        width: 200px;
    }
 }
+<<<<<<< HEAD
+
+.forms input[type="submit"] {
+    display: none;
+}
+
+.submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#lupa {
+    width: 30px;
+}
+
+#lupa {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ask {
+    padding-right: 40px;
+}
+=======
    /* .ask{ */
+>>>>>>> b75c0236346ef8d0c4ea38509169afa6f5eb8db2

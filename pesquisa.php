@@ -53,9 +53,12 @@ include('conexao.php');
             </div>
             <div class="search">
                 <form class="forms" action="pesquisa.php" method="post">
-                    <img id="lupa" src="img/lupa.png" alt="lupa">
-                    <input type="text" placeholder=" O que você precisa?" class="ask" name="termo">
-                    <input type="submit" value="Pesquisar">
+                    <label for="termo" class="sr-only">O que você precisa?</label>
+                    <input type="text" id="termo" placeholder=" O que você precisa?" class="ask" name="termo">
+                    <label for="submit" class="sr-only">Pesquisar</label>
+                    <button type="submit" id="submit" class="submit-btn">
+                        <img id="lupa" src="img/lupa.png" alt="lupa">
+                    </button>
                 </form>
             </div>
             <div class="buy">
@@ -78,32 +81,34 @@ include('conexao.php');
             </div>
         </div>
         <div>
-            <?php
-            $pesquisa = $mysqli->real_escape_string($_POST['termo']);
-            $sql_code = "SELECT *
+            <div class="clothes">
+                <?php
+                $pesquisa = $mysqli->real_escape_string($_POST['termo']);
+                $sql_code = "SELECT *
                FROM vestuario
                WHERE vestuario_modelo LIKE '%$pesquisa%'";
-            $resultado = $mysqli->query($sql_code);
-            
-            if ($resultado) {
-                if ($resultado->num_rows > 0) {
-                    while ($row = $resultado->fetch_assoc()) {
-                        echo "<div class= 'all'>";
-                        echo "<div class= 'tenisous'>";
-                        echo "<img src='" . $row["vestuario_img"] . "'>";
-                        echo "<p class='name'>" . $row["vestuario_modelo"] . "</p>";
-                        echo "<p class='price'>R$" . $row["vestuario_preco"] . "</p>";
-                        echo "</div>";
-                    }
+                $resultado = $mysqli->query($sql_code);
 
+                if ($resultado) {
+                    if ($resultado->num_rows > 0) {
+                        while ($row = $resultado->fetch_assoc()) {
+                            echo '<div class="sweater">';
+                            echo "<img src='" . $row["vestuario_img"] . "'>";
+                            echo "<p class='desc'>" . $row["vestuario_modelo"] . "</p>";
+                            echo "<p class='price'>R$" . $row["vestuario_preco"] . "</p>";
+                            echo '<a href="update_vest.php?vestuario_id=' . $row["vestuario_id"] . '">Editar</a>';
+                            echo "</div>";
+                        }
+
+                    } else {
+                        echo "<p class='error-message'>Nenhum resultado encontrado.</p>";
+                    }
                 } else {
-                    echo "Nenhum resultado encontrado.";
+                    die("Erro na consulta: " . $mysqli->error);
                 }
-            } else {
-                die("Erro na consulta: " . $mysqli->error);
-            }
-            
-            ?>
+
+                ?>
+            </div>
         </div>
     </main>
     <!-- Início do Rodapé -->
