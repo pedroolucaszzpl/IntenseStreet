@@ -11,7 +11,7 @@ if (isset($_POST['tenis_id'])) {
 
     if ($mysqli->query($sql)) {
         // Item excluído com sucesso
-        echo "Item excluído com sucesso. <a href='especiais.php'>Voltar</a>";
+        echo "Item excluído com sucesso. <a href='../especiais.php'>Voltar</a>";
     } else {
         // Erro ao excluir o item
         echo "Erro ao excluir o item: " . $mysqli->error;

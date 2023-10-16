@@ -215,6 +215,22 @@ aside {
     justify-content: center;
 }
 
+label{
+    color: #fff;
+    font-weight: bold;
+}
+
+.nome h3{
+    color: #fff;
+    font-weight: bold;
+    font-family: "Bauhaus";
+}
+p.price {
+    font-family: "Bauhaus";
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
 
 .tam {
     margin-top: 8px;
@@ -347,6 +363,12 @@ aside {
     font-family: "Bauhaus", "Helvetica Neue", Helvetica, Arial;
     font-weight: 700;
 }
+
+.desc{
+    color: #fff;
+}
+
+
 /*footer css*/
 
 .footer-clean {

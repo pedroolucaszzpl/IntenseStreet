@@ -263,6 +263,10 @@ div#linhas {
     flex-direction: column;
     align-items: center;
 }
+.all a{
+    text-decoration: none;
+    color: #211B15;
+}
 
 .all button {
     margin-top: 5px;
